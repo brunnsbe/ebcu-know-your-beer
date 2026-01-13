@@ -20,6 +20,36 @@
         <a href="/on-trade/" class="hover:opacity-80 transition-opacity{% if page.url == '/on-trade/' %} font-medium{% endif %}">On-trade</a>
         <a href="/faq/" class="hover:opacity-80 transition-opacity{% if page.url == '/faq/' %} font-medium{% endif %}">FAQ</a>
         <a href="/about/" class="hover:opacity-80 transition-opacity{% if page.url == '/about/' %} font-medium{% endif %}">About</a>
+
+        {# Language selector #}
+        <div class="relative">
+          <button id="language-toggle" class="flex items-center gap-2 hover:opacity-80 transition-opacity" aria-label="Select language">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+            </svg>
+            <span>EN</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="language-menu" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg overflow-hidden z-50">
+            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
+              <span class="font-semibold">English</span>
+            </a>
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+              <span>Deutsch</span>
+              <span class="text-xs ml-2">(soon)</span>
+            </a>
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+              <span>Français</span>
+              <span class="text-xs ml-2">(soon)</span>
+            </a>
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+              <span>Nederlands</span>
+              <span class="text-xs ml-2">(soon)</span>
+            </a>
+          </div>
+        </div>
       </nav>
       <button id="mobile-menu-btn" class="md:hidden p-2 -mr-2 text-white" aria-label="Toggle menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,6 +63,21 @@
       <a href="/on-trade/" class="block py-2 hover:opacity-80">On-trade</a>
       <a href="/faq/" class="block py-2 hover:opacity-80">FAQ</a>
       <a href="/about/" class="block py-2 hover:opacity-80">About</a>
+
+      <div class="border-t border-white/20 pt-2 mt-2">
+        <button id="mobile-language-toggle" class="flex items-center gap-2 py-2 w-full hover:opacity-80">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+          </svg>
+          <span>Language: EN</span>
+        </button>
+        <div id="mobile-language-menu" class="hidden pl-7 space-y-1 text-base">
+          <a href="#" class="block py-2 text-white font-semibold">English</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Deutsch (soon)</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Français (soon)</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Nederlands (soon)</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -100,8 +145,33 @@
   </footer>
 
   <script>
+    // Mobile menu toggle
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Desktop language dropdown
+    const languageToggle = document.getElementById('language-toggle');
+    const languageMenu = document.getElementById('language-menu');
+
+    languageToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      languageMenu.classList.toggle('hidden');
+    });
+
+    // Close language menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!languageToggle.contains(e.target) && !languageMenu.contains(e.target)) {
+        languageMenu.classList.add('hidden');
+      }
+    });
+
+    // Mobile language dropdown
+    const mobileLanguageToggle = document.getElementById('mobile-language-toggle');
+    const mobileLanguageMenu = document.getElementById('mobile-language-menu');
+
+    mobileLanguageToggle.addEventListener('click', function() {
+      mobileLanguageMenu.classList.toggle('hidden');
     });
   </script>
 </body>

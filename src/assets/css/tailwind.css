@@ -55,6 +55,13 @@
     font-weight: 700;
   }
 
+  /* Language dropdown uses regular font */
+  #language-menu a,
+  #mobile-language-menu a {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+  }
+
   /* Callout boxes - make white bordered boxes stand out */
   .prose .rounded-xl.border-gray-200,
   .prose .rounded-lg.border-gray-200,
