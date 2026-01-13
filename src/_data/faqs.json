@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What is Know Your Beer?",
+    "answer": "Know Your Beer is a Europe-wide consumer education campaign by EBCU (European Beer Consumers Union). It helps consumers understand beer labels, make informed choices, and know what questions to ask when buying beer."
+  },
+  {
+    "question": "Why don't beer labels list all ingredients?",
+    "answer": "EU regulations only require allergen labelling on beer, not a full ingredient list. However, from 2025/2026, beers must provide ingredient and nutrition information, which can be accessed via QR codes on labels."
+  },
+  {
+    "question": "What does 'brewed for' mean on a label?",
+    "answer": "'Brewed for' typically means the beer was contract-brewed at a different brewery than the brand owner's facility. The brand owner designs the recipe and owns the brand, but another brewery produces it. This is a common and legal practice."
+  },
+  {
+    "question": "How can I find out where a beer was actually brewed?",
+    "answer": "Look for phrases like 'brewed at', 'brewed in', or a brewery address. If it says 'brewed for' or 'distributed by', the actual brewing location may be different. Some beers include batch codes that indicate the production facility."
+  },
+  {
+    "question": "What's the difference between 'best before' and 'packaged on' dates?",
+    "answer": "'Best before' indicates when the beer is expected to be at optimal quality. 'Packaged on' or 'canned on' dates tell you when it was actually produced. For hop-forward beers like IPAs, a packaged-on date is often more useful for judging freshness."
+  },
+  {
+    "question": "Is EBCU independent?",
+    "answer": "Yes. EBCU is a federation of independent consumer organisations across Europe. Any external funding for Know Your Beer is disclosed publicly, and funding does not grant editorial control. Editorial responsibility remains with EBCU."
+  },
+  {
+    "question": "Can breweries or brands partner with Know Your Beer?",
+    "answer": "We welcome partnerships with consumer organisations, brewing associations, and independent brewer networks that share our commitment to transparency. We do not accept partnerships that would compromise editorial independence."
+  },
+  {
+    "question": "Will Know Your Beer be available in my language?",
+    "answer": "We plan to offer content in multiple European languages. The initial launch will be in English, with translations following based on partner interest and resources."
+  }
+]

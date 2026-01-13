@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "alcohol-style",
+    "title": "Alcohol content, serving size & beer style",
+    "shortTitle": "Alcohol & Style",
+    "lead": "Understanding ABV, standard drinks, and what beer styles tell you about flavour expectations.",
+    "icon": "percent"
+  },
+  {
+    "slug": "ingredients-allergens",
+    "title": "Ingredients & allergens",
+    "shortTitle": "Ingredients & Allergens",
+    "lead": "What's actually in your beer, from core ingredients to common additives and allergen information.",
+    "icon": "grain"
+  },
+  {
+    "slug": "who-made-it",
+    "title": "Who made this beer?",
+    "shortTitle": "Who Made It",
+    "lead": "Understanding the difference between brewer, brand owner, packager, and distributor.",
+    "icon": "users"
+  },
+  {
+    "slug": "where-brewed",
+    "title": "Where was it brewed?",
+    "shortTitle": "Where Brewed",
+    "lead": "How to find the actual brewing location and why it might differ from the brand's origin.",
+    "icon": "location"
+  },
+  {
+    "slug": "freshness-dates",
+    "title": "Freshness, dates & traceability",
+    "shortTitle": "Freshness & Dates",
+    "lead": "Packaged-on vs best-before dates, batch codes, and how different styles age.",
+    "icon": "calendar"
+  },
+  {
+    "slug": "storage-serving",
+    "title": "Storage, sediment & 'live' beer handling",
+    "shortTitle": "Storage & Serving",
+    "lead": "Proper storage conditions, understanding sediment, and serving bottle-conditioned beers.",
+    "icon": "storage"
+  }
+]

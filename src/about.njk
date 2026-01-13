@@ -1,0 +1,98 @@
+---
+layout: layouts/base.njk
+title: About
+---
+
+{# Page header #}
+<div class="bg-ebcu-blue pt-24 pb-12">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">About Know Your Beer</h1>
+    <p class="mt-4 text-lg text-white/90 max-w-2xl">
+      A consumer education initiative by the European Beer Consumers Union.
+    </p>
+  </div>
+</div>
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+  <div class="prose prose-lg max-w-none">
+    <h2>What is Know Your Beer?</h2>
+    <p>
+      Know Your Beer is a Europe-wide consumer education campaign that helps people understand beer labels,
+      make informed choices, and know their rights when buying beer in shops or ordering in bars and restaurants.
+    </p>
+    <p>
+      The campaign is developed and maintained by EBCU (European Beer Consumers Union), a federation of
+      independent consumer organisations across Europe dedicated to promoting beer culture and protecting
+      consumer interests.
+    </p>
+
+    <h2>Why this campaign?</h2>
+    <p>
+      Beer labels can be confusing. While they're technically correct, the information isn't always easy
+      to interpret. Terms like "brewed for", "distributed by", and "produced in" can obscure important
+      details about who actually made your beer and where.
+    </p>
+    <p>
+      New EU regulations coming into effect in 2025/2026 will require more transparency about ingredients
+      and nutrition. This campaign helps consumers understand both current labels and the new information
+      that will become available.
+    </p>
+  </div>
+
+  <div class="rounded-xl border-2 border-ebcu-blue p-6 my-12">
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Independence & transparency</h2>
+    <div class="text-gray-600 space-y-3">
+      <p>
+        EBCU is an independent consumer organisation. Know Your Beer maintains strict editorial independence:
+      </p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Any external funding is disclosed publicly</li>
+        <li>Funding does not grant editorial control</li>
+        <li>Editorial responsibility remains with EBCU</li>
+        <li>We do not accept payments for product endorsements</li>
+        <li>Partner organisations are listed transparently</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="space-y-8">
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Partners</h2>
+      <p class="text-gray-600 mb-4">
+        We're open to partnerships with organisations that share our commitment to consumer education
+        and transparency:
+      </p>
+      <ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+        <li>Consumer organisations</li>
+        <li>Brewing associations</li>
+        <li>Independent brewer networks</li>
+        <li>Educational institutions</li>
+      </ul>
+      <p class="text-gray-600">
+        Confirmed partners will be listed here. Interested in partnering? Get in touch.
+      </p>
+    </section>
+
+    <section class="rounded-xl border border-gray-200 bg-gray-50 p-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Contact</h2>
+      <div class="text-gray-600">
+        <p><strong>{{ site.contactName }}</strong></p>
+        <p>Email: {{ site.contactEmail }}</p>
+        <p>Phone: {{ site.contactPhone }}</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">About EBCU</h2>
+      <p class="text-gray-600 mb-4">
+        The European Beer Consumers Union (EBCU) is a federation of independent consumer organisations
+        from across Europe. Member organisations work to promote beer culture, protect consumer interests,
+        and advocate for transparency and quality in the beer market.
+      </p>
+      <a href="https://www.ebcu.org" class="inline-flex items-center text-ebcu-gold font-medium hover:text-ebcu-gold-dark">
+        Visit ebcu.org
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+      </a>
+    </section>
+  </div>
+</div>

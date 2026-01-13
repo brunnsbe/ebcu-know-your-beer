@@ -1,0 +1,13 @@
+{
+  "name": "Know Your Beer",
+  "org": "EBCU",
+  "tagline": "Learn how to read a beer label and make informed choices.",
+  "description": "A Europe-wide consumer education campaign by EBCU explaining what beer label information means, what to look for, and how to use it.",
+  "launchWindow": "Late April / early May 2026",
+  "contactName": "André Brunnsberg",
+  "contactEmail": "[Email]",
+  "contactPhone": "[Phone]",
+  "languages": ["en"],
+  "defaultLanguage": "en",
+  "isDraft": true
+}

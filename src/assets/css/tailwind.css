@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Open Sans and Montserrat from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Montserrat:wght@700&display=swap');
+
+/* Base styles */
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+
+  body {
+    @apply text-gray-700 bg-white;
+  }
+
+  /* Prose styles for content pages */
+  .prose {
+    @apply text-gray-600;
+  }
+
+  .prose h2 {
+    @apply text-xl font-semibold text-gray-900 mt-8 mb-4;
+  }
+
+  .prose h3 {
+    @apply text-lg font-semibold text-gray-900 mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .prose ul {
+    @apply mb-4 ml-6 list-disc space-y-1;
+  }
+
+  .prose li {
+    @apply leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-ebcu-blue hover:text-ebcu-blue-dark underline;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  /* Navigation links */
+  nav a {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+  }
+
+  /* Callout boxes - make white bordered boxes stand out */
+  .prose .rounded-xl.border-gray-200,
+  .prose .rounded-lg.border-gray-200,
+  article .rounded-xl.border-gray-200,
+  article .rounded-lg.border-gray-200 {
+    @apply bg-gray-50 shadow-sm;
+  }
+}

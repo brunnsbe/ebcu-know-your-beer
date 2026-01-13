@@ -1,0 +1,18 @@
+{
+  "primary": {
+    "label": "Start: Read the label",
+    "href": "/read-the-label/"
+  },
+  "secondary": {
+    "label": "On-trade checklist",
+    "href": "/on-trade/"
+  },
+  "contact": {
+    "label": "Contact us",
+    "href": "/about/"
+  },
+  "partners": {
+    "label": "Partner with us",
+    "href": "/about/#partners"
+  }
+}

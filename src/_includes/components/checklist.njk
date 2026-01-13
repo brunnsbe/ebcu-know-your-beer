@@ -1,0 +1,17 @@
+{#
+  Checklist Component
+  Usage: {% set checklistTitle = "Title" %}{% set checklistItems = ["Item 1", "Item 2"] %}{% include "components/checklist.njk" %}
+#}
+<div class="rounded-xl border border-slate-200 p-5 my-6">
+  {% if checklistTitle %}
+  <h3 class="font-semibold text-lg mb-4">{{ checklistTitle }}</h3>
+  {% endif %}
+  <ul class="space-y-3">
+    {% for item in checklistItems %}
+    <li class="flex items-start gap-3">
+      <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-slate-300 mt-0.5"></div>
+      <span class="text-slate-700">{{ item }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
