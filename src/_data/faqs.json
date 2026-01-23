@@ -1,11 +1,11 @@
 [
   {
     "question": "What is Know Your Beer?",
-    "answer": "Know Your Beer is a Europe-wide consumer education campaign by EBCU (European Beer Consumers Union). It helps consumers understand beer labels, make informed choices, and know what questions to ask when buying beer."
+    "answer": "Know Your Beer is a Europe-wide consumer education campaign by EBCU (European Beer Consumers Union). It helps consumers understand beer labels, make informed choices, and know what questions to ask when buying beer. The campaign supports the EU's broader consumer empowerment goals under the 2030 Consumer Agenda."
   },
   {
-    "question": "Why don't beer labels list all ingredients?",
-    "answer": "EU regulations only require allergen labelling on beer, not a full ingredient list. However, from 2025/2026, beers must provide ingredient and nutrition information, which can be accessed via QR codes on labels."
+    "question": "Is ingredient labelling mandatory on beer?",
+    "answer": "Not yet at EU level. Unlike wine, beer is still exempt from mandatory ingredient and nutrition labelling under EU food law. However, the brewing industry has voluntarily committed to providing this information through a 2019 Memorandum of Understanding with the EU. By 2022, 95% of beer volumes in bottles and cans included ingredients lists. Ireland will be the first EU country to mandate comprehensive alcohol labelling by 2026."
   },
   {
     "question": "What does 'brewed for' mean on a label?",
@@ -30,5 +30,17 @@
   {
     "question": "Will Know Your Beer be available in my language?",
     "answer": "We plan to offer content in multiple European languages. The initial launch will be in English, with translations following based on partner interest and resources."
+  },
+  {
+    "question": "Why do some beers have QR codes on the label?",
+    "answer": "QR codes allow brewers to provide detailed information (ingredients, nutrition, allergens, tasting notes) without cluttering the physical label. This is already mandatory for wine, where full nutrition and ingredient information can be provided electronically. Many brewers are adopting this approach voluntarily. When you scan a QR code, ensure it links to the brewer's official site rather than a third-party page."
+  },
+  {
+    "question": "What is the EU Consumer Agenda 2030?",
+    "answer": "The EU Consumer Agenda 2030 is the European Commission's five-year strategic framework for consumer policy, adopted in November 2025. It focuses on completing the single market, digital fairness, sustainable consumption, and stronger enforcement. While it doesn't specifically mandate beer labelling changes, it supports consumer empowerment and transparency across all sectors. Know Your Beer aligns with these goals by helping consumers make informed choices."
+  },
+  {
+    "question": "What are my rights when asking about beer in a bar or restaurant?",
+    "answer": "Under EU food law, staff must be able to provide allergen information for any product on request. You can also ask where the beer was brewed, request to see the packaging for bottled or canned beers, and enquire about freshness. While not all information is legally required to be available, knowledgeable venues should be able to answer reasonable questions about what they serve."
   }
 ]
