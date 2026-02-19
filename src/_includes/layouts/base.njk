@@ -16,7 +16,7 @@
       </a>
       <nav class="hidden md:flex items-center gap-8 text-lg text-white">
         <a href="/" class="hover:opacity-80 transition-opacity{% if page.url == '/' %} font-medium{% endif %}">Home</a>
-        <a href="/read-the-label/" class="hover:opacity-80 transition-opacity{% if page.url == '/read-the-label/' %} font-medium{% endif %}">Read the label</a>
+        <a href="/read-the-label/" class="hover:opacity-80 transition-opacity{% if page.url == '/read-the-label/' or page.url.startsWith('/topics/') %} font-medium{% endif %}">Read the label</a>
         <a href="/on-trade/" class="hover:opacity-80 transition-opacity{% if page.url == '/on-trade/' %} font-medium{% endif %}">On-trade</a>
         <a href="/faq/" class="hover:opacity-80 transition-opacity{% if page.url == '/faq/' %} font-medium{% endif %}">FAQ</a>
         <a href="/about/" class="hover:opacity-80 transition-opacity{% if page.url == '/about/' %} font-medium{% endif %}">About</a>
@@ -36,15 +36,15 @@
             <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
               <span class="font-semibold">English</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
               <span>Deutsch</span>
               <span class="text-xs ml-2">(soon)</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
               <span>Français</span>
               <span class="text-xs ml-2">(soon)</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed">
+            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
               <span>Nederlands</span>
               <span class="text-xs ml-2">(soon)</span>
             </a>
@@ -73,9 +73,9 @@
         </button>
         <div id="mobile-language-menu" class="hidden pl-7 space-y-1 text-base">
           <a href="#" class="block py-2 text-white font-semibold">English</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Deutsch (soon)</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Français (soon)</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed">Nederlands (soon)</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Deutsch (soon)</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Français (soon)</a>
+          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Nederlands (soon)</a>
         </div>
       </div>
     </nav>
