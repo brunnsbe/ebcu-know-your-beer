@@ -24,7 +24,7 @@
     "slug": "where-brewed",
     "title": "Where was it brewed?",
     "shortTitle": "Where Brewed",
-    "lead": "How to find the actual brewing location and why it might differ from the brand's origin.",
+    "lead": "How to find the actual brewing location, what EU quality logos (PGI, PDO, TSG) mean, and why origin may differ from a brand's image.",
     "icon": "location"
   },
   {
@@ -38,7 +38,7 @@
     "slug": "storage-serving",
     "title": "Storage, sediment & 'live' beer handling",
     "shortTitle": "Storage & Serving",
-    "lead": "Proper storage conditions, understanding sediment, and serving bottle-conditioned beers.",
+    "lead": "Proper storage conditions, understanding sediment, and serving bottle-conditioned and cask beers.",
     "icon": "storage"
   }
 ]
