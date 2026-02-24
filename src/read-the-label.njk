@@ -39,8 +39,8 @@ title: Read the label
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
         {% elif topic.icon == "users" %}
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-        {% elif topic.icon == "location" %}
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        {% elif topic.icon == "badge" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
         {% elif topic.icon == "calendar" %}
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
         {% elif topic.icon == "storage" %}
@@ -88,7 +88,7 @@ title: Read the label
           <li>Packaged-on date</li>
           <li>Serving suggestions</li>
           <li>Tasting notes</li>
-          <li><a href="#competition-awards" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Competition awards/medals</a> — <a href="#competition-awards" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">see below</a></li>
+          <li><a href="/topics/marks-logos-certifications/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Competition awards/medals</a></li>
         </ul>
       </div>
     </div>
@@ -99,6 +99,16 @@ title: Read the label
         Pregnancy warnings, drink-driving symbols, minimum age logos, and "Drink Responsibly" marks
         are covered in the
         <a href="/topics/alcohol-style/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Alcohol content &amp; beer style</a>
+        topic.
+      </p>
+    </div>
+
+    <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5 mt-6">
+      <p class="font-medium text-gray-700">Marks, logos & certifications</p>
+      <p class="text-sm text-gray-600 mt-1">
+        EU quality marks (PGI, PDO, TSG), Trappist and Abbey Beer designations, independent brewer
+        logos, and competition awards are covered in the
+        <a href="/topics/marks-logos-certifications/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Marks, logos &amp; certifications</a>
         topic.
       </p>
     </div>
@@ -116,38 +126,4 @@ title: Read the label
     </div>
   </div>
 
-  {# Competition awards section #}
-  <div id="competition-awards" class="border-t border-gray-200 pt-12 mt-16">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">Competition awards and medals</h2>
-    <p class="text-gray-600 mb-6">
-      Many beer labels display awards from competitions - "Gold Medal", "Champion Beer", "Best IPA", and similar claims.
-      These can help identify quality beers, but it's important to understand what they mean.
-    </p>
-
-    <h3 class="text-xl font-semibold text-gray-900 mb-4">Understanding competition awards</h3>
-    <p class="text-gray-600 mb-4">
-      Not all beer competitions have the same standards. Some are professionally judged with strict blind-tasting protocols,
-      while others may be more promotional events. When you see a competition award on a label, consider:
-    </p>
-    <ul class="text-gray-600 space-y-2 mb-6 list-disc list-inside">
-      <li>Is the competition name clearly stated, or just "Award Winner"?</li>
-      <li>Can you verify the competition actually exists and its judging standards?</li>
-      <li>Is there a year or specific category mentioned?</li>
-    </ul>
-
-    <h3 class="text-xl font-semibold text-gray-900 mb-4">EBCU-endorsed competitions</h3>
-    <p class="text-gray-600 mb-4">
-      EBCU endorses competitions that meet essential standards including blind judging (judges don't know which beer
-      they're tasting), independent judging (brewers don't judge their own beers), published style descriptions, and
-      transparent judging procedures.
-    </p>
-    <p class="text-gray-600 mb-6">
-      Awards from EBCU-endorsed competitions indicate the beer has been professionally evaluated against clear standards.
-    </p>
-
-    <a href="https://www.ebcu.org/beer-competitions/" class="inline-flex items-center text-ebcu-gold font-medium hover:text-ebcu-gold-dark">
-      View EBCU-endorsed competitions
-      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-    </a>
-  </div>
 </div>

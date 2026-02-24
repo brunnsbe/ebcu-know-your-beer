@@ -14,18 +14,18 @@
     "icon": "grain"
   },
   {
-    "slug": "who-made-it",
-    "title": "Who made this beer?",
-    "shortTitle": "Who Made It",
-    "lead": "Understanding the difference between brewer, brand owner, packager, and distributor.",
+    "slug": "producer-origin",
+    "title": "Producer & origin",
+    "shortTitle": "Producer & Origin",
+    "lead": "Who actually made your beer and where — understanding producer phrases, contract brewing, and how to find the real brewing location.",
     "icon": "users"
   },
   {
-    "slug": "where-brewed",
-    "title": "Where was it brewed?",
-    "shortTitle": "Where Brewed",
-    "lead": "How to find the actual brewing location, what EU quality logos (PGI, PDO, TSG) mean, and why origin may differ from a brand's image.",
-    "icon": "location"
+    "slug": "marks-logos-certifications",
+    "title": "Marks, logos & certifications",
+    "shortTitle": "Marks & Logos",
+    "lead": "EU quality marks (PGI, PDO, TSG), Trappist and Abbey Beer certifications, independent brewer logos, and competition awards explained.",
+    "icon": "badge"
   },
   {
     "slug": "freshness-dates",
