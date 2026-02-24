@@ -1,4 +1,12 @@
+import { EleventyI18nPlugin } from "@11ty/eleventy";
+
 export default function(eleventyConfig) {
+  // Internationalisation
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: "en",
+    errorMode: "allow-fallback"
+  });
+
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");

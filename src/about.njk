@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: About
+contentVersion: "2026-02-24"
 ---
 
 {# Page header #}
@@ -134,9 +135,7 @@ title: About
     <section class="rounded-xl border border-gray-200 bg-gray-50 p-6">
       <h2 class="text-xl font-bold text-gray-900 mb-4">Contact</h2>
       <div class="text-gray-600">
-        <p><strong>{{ site.contactName }}</strong></p>
-        <p>Email: {{ site.contactEmail }}</p>
-        <p>Phone: {{ site.contactPhone }}</p>
+        <p><a href="mailto:{{ site.contactEmail }}" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">{{ site.contactEmail }}</a></p>
       </div>
     </section>
 
@@ -186,6 +185,13 @@ title: About
             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </a>
           <p class="text-sm text-gray-500 mt-1">Beer competitions that meet EBCU's standards for blind, independent judging</p>
+        </li>
+        <li>
+          <a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste/packaging-packaging-waste-regulation_en" class="inline-flex items-center text-ebcu-gold font-medium hover:text-ebcu-gold-dark">
+            EU Packaging and Packaging Waste Regulation (PPWR)
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+          <p class="text-sm text-gray-500 mt-1">EU regulation requiring deposit return schemes across member states by 2029</p>
         </li>
       </ul>
     </section>

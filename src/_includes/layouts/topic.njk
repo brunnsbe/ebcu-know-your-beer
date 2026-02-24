@@ -24,12 +24,17 @@ layout: layouts/base.njk
     {{ content | safe }}
   </article>
 
-  {# More topics #}
+  {# All topics #}
   <footer class="border-t border-gray-200 pt-12 mt-16">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">More topics</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">All topics</h2>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {% for t in topics %}
-        {% if t.slug != slug %}
+        {% if t.slug == slug %}
+        <div class="rounded-xl border-2 border-ebcu-blue bg-ebcu-blue-light p-5">
+          <h3 class="font-semibold text-ebcu-blue">{{ t.title }}</h3>
+          <p class="text-sm text-gray-600 mt-1">{{ t.lead }}</p>
+        </div>
+        {% else %}
         <a class="rounded-xl bg-ebcu-blue p-5 hover:bg-ebcu-blue-dark hover:shadow-md transition-all" href="/topics/{{ t.slug }}/">
           <h3 class="font-semibold text-white">{{ t.title }}</h3>
           <p class="text-sm text-white/90 mt-1">{{ t.lead }}</p>

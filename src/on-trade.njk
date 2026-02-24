@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: On-trade
+contentVersion: "2026-02-24"
 ---
 
 {# Page header #}
@@ -28,8 +29,17 @@ title: On-trade
     </p>
   </div>
 
+  <nav class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5 mb-12">
+    <p class="font-semibold text-gray-900 mb-3">On this page</p>
+    <ul class="space-y-2">
+      <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Questions you can ask</a></li>
+      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Cask vs keg: what you're actually ordering</a></li>
+      <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">What to look for</a></li>
+    </ul>
+  </nav>
+
   <div class="space-y-12">
-    <section>
+    <section id="questions">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">Questions you can ask</h2>
 
       <div class="grid gap-6 md:grid-cols-2">
@@ -79,7 +89,7 @@ title: On-trade
       </div>
     </section>
 
-    <section>
+    <section id="cask-vs-keg">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">Cask vs keg: what you're actually ordering</h2>
       <p class="text-gray-600 mb-6">
         "Draught beer" covers very different products. Whether a beer is cask-conditioned or keg-conditioned
@@ -144,7 +154,7 @@ title: On-trade
       </div>
     </section>
 
-    <section>
+    <section id="what-to-look-for">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">What to look for</h2>
 
       <div class="grid gap-6 md:grid-cols-2">

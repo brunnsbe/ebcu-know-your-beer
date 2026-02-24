@@ -24,7 +24,6 @@ npm run clean        # Remove _site output directory
 - `src/` - Source files
   - `_data/` - Global data files (JSON) used across templates
   - `_includes/layouts/` - Page layouts (base.njk, topic.njk, page.njk)
-  - `_includes/components/` - Reusable Nunjucks components (callout, checklist, faqAccordion, topicCard)
   - `assets/` - Static assets
     - `css/` - Tailwind CSS source (tailwind.css)
     - `images/` - Site images and photos
@@ -38,7 +37,7 @@ npm run clean        # Remove _site output directory
 ### Data Flow
 
 Global data from `src/_data/*.json` is automatically available in all templates:
-- `site` - Site metadata (name, org, tagline, description, launchWindow, contact info, languages, isDraft flag)
+- `site` - Site metadata (name, org, tagline, description, launchWindow, contactEmail, languages, defaultLanguage, isDraft flag)
 - `topics` - Array of 6 topic cards, each with slug, title, shortTitle, lead, icon
 - `faqs` - FAQ questions and answers
 - `cta` - Call-to-action button configurations (present but not currently referenced in any template)
@@ -50,11 +49,12 @@ Global data from `src/_data/*.json` is automatically available in all templates:
   - Main content area
   - Footer with 3 columns (logo/description, Quick Links, Label Topics), independence statement, copyright
   - JavaScript for mobile menu and language dropdown interactivity
+  - `lang` attribute on `<html>` is dynamic (`page.lang or 'en'`)
 - `topic.njk` - Extends base with:
   - Blue header with breadcrumb (Read the label / Topic Title)
   - Title and lead text
   - Prose-styled article content
-  - "More topics" footer grid showing other topics in blue cards
+  - "All topics" footer grid showing all 6 topics; the current page is rendered as a non-clickable light-blue card, others as clickable blue cards
 
 Note: `page.njk` exists in `_includes/layouts/` but is not currently used by any page — all main pages use `base.njk` directly and implement their own blue header section inline.
 
@@ -74,9 +74,11 @@ Note: `page.njk` exists in `_includes/layouts/` but is not currently used by any
 **Key patterns**:
 - Topic cards: Blue background (`bg-ebcu-blue`) with white text, gold "Learn More" links appearing on hover (`opacity-0 group-hover:opacity-100`), hover to darker blue (`hover:bg-ebcu-blue-dark`)
 - Callout boxes: Gray background (`bg-gray-50`) with border (`border border-gray-200`) and subtle shadow (`shadow-sm`)
+- Blue callout boxes: `border border-ebcu-blue/30 bg-ebcu-blue/5` for informational callouts; `border border-ebcu-blue bg-ebcu-blue-light` for regulatory/policy callouts
 - Header: Sticky (`sticky top-0 z-50`), EBCU blue background, responsive with mobile hamburger menu
 - Hero sections: Inline style with linear-gradient overlay and background image
-- Language selector: Dropdown menu with placeholder options (Deutsch, Français, Nederlands marked as "soon")
+- Language selector: Dropdown menu; English active, Deutsch/Français/Nederlands marked as "(soon)"
+- Table of contents: `<nav>` block with "On this page" heading and anchor links, used on most topic pages and on-trade
 
 ### Main Pages
 
@@ -91,25 +93,24 @@ Note: `page.njk` exists in `_includes/layouts/` but is not currently used by any
    - Image with caption (man_label_2.jpg)
    - 6 topic cards in responsive grid
    - Quick reference section with 3 cards: "Required by law", "Voluntary (industry commitment)", "Often optional"
-   - Regulatory landscape callout explaining voluntary vs mandatory labeling, Ireland's 2028 requirements, and link to EU Consumer Agenda 2030
-   - Health warning logos signpost linking to alcohol-style topic
-   - Competition awards and medals section explaining EBCU-endorsed competitions with link to ebcu.org
+   - Regulatory landscape callout explaining voluntary vs mandatory labeling and Ireland's 2028 requirements
+   - Signpost callouts linking to alcohol-style (health warning logos) and marks-logos-certifications (competition awards, GI logos etc.)
 
 3. **On-Trade** (`on-trade.njk`):
    - Blue header explaining on-trade context
+   - Table of contents
    - Rights callout about allergen information
    - Image (bar_in_ireland.jpg)
    - "Questions you can ask" section with 2 cards: "Before ordering" and "For draught beer"
    - "Cask vs keg" section: side-by-side comparison, signs of a well-kept cask, why it matters callout
    - "What to look for" section with "Good signs" and "Worth questioning" cards
-   - Related topics section linking to ingredients-allergens and who-made-it
+   - Related topics section linking to ingredients-allergens and producer-origin
 
 4. **FAQ** (`faq.njk`):
    - Blue header
    - Image (couple.jpg)
    - Accordion-style FAQ using `<details>` elements (data from `faqs.json`)
-   - Contact callout for additional questions
-   - FAQ topics include: campaign overview, ingredient labeling regulations (voluntary vs mandatory), QR codes, brewed for/brewed at, freshness dates, EBCU independence, partnerships, languages, EU Consumer Agenda 2030, and consumer rights in bars/restaurants
+   - Contact callout linking to about page
 
 5. **About** (`about.njk`):
    - Blue header
@@ -118,20 +119,22 @@ Note: `page.njk` exists in `_includes/layouts/` but is not currently used by any
    - Prose content explaining the campaign, why it exists, and voluntary beer labeling context
    - "Supporting EU consumer goals" section linking to EU Consumer Agenda 2030 and European Consumer Summit
    - Independence & transparency callout box with bullet points
-   - Partners section, Contact section with site.json data, About EBCU section with link
-   - Useful resources section with links to EU Consumer Agenda, EU Alcohol Labelling, EU Food Information Regulation, and EBCU-endorsed competitions
+   - Partners section, Contact section (email only: know-your-beer@ebcu.org), About EBCU section with link
+   - Useful resources section with links to EU Consumer Agenda, EU Alcohol Labelling, EU Food Information Regulation, EBCU-endorsed competitions, and EU PPWR
 
 ### Topics
 
 Six topic pages in `src/topics/`:
 1. `alcohol-style.njk` - Alcohol content, serving size & beer style; also covers health warning logos (pregnancy, drink-driving, minimum age, responsible drinking)
 2. `ingredients-allergens.njk` - Ingredients & allergens; ends with cross-link to on-trade page for allergen rights
-3. `who-made-it.njk` - Who made this beer?; includes independent brewer logos section and cross-link to where-brewed
-4. `where-brewed.njk` - Where was it brewed?; includes EU quality logos (PGI, PDO, TSG) with beer examples, Trappist and Belgian Abbey Beer designations; cross-links to who-made-it
+3. `producer-origin.njk` - Producer & origin; covers producer phrases (brewed by/for etc.), EU law requirements, finding brewing location, misleading patterns, contract brewing scenarios
+4. `marks-logos-certifications.njk` - Marks, logos & certifications; covers EU GI logos (PGI, PDO, TSG) with examples, Trappist and Belgian Abbey Beer, independent brewer logos, competition awards, vegan labels, recycling marks, deposits and PPWR
 5. `freshness-dates.njk` - Freshness, dates & traceability
 6. `storage-serving.njk` - Storage, sediment & 'live' beer handling; brief cask mention cross-linking to on-trade
 
-Each topic uses `topic.njk` layout and has frontmatter with `layout`, `title`, and `slug`.
+Each topic uses `topic.njk` layout and has frontmatter with `layout`, `title`, `slug`, and `contentVersion`.
+
+Most topic pages include a table of contents (`<nav>` with "On this page" heading) after the intro paragraph, with anchor links to each `<h2 id="...">` section. `freshness-dates.njk` is the exception — it is short enough not to need one.
 
 ### Icons
 
@@ -139,7 +142,7 @@ Topic icons are inline SVG elements defined with conditional logic in:
 - `index.njk` (home page topic cards)
 - `read-the-label.njk` (topic cards)
 
-Available icons: `percent`, `grain`, `users`, `location`, `calendar`, `storage`
+Available icons: `percent`, `grain`, `users`, `badge`, `calendar`, `storage`
 
 ### Adding a New Topic
 
@@ -159,14 +162,16 @@ Available icons: `percent`, `grain`, `users`, `location`, `calendar`, `storage`
    layout: layouts/topic.njk
    title: Topic Title
    slug: topic-slug
+   contentVersion: "YYYY-MM-DD"
    ---
-   Content here using Markdown or HTML with Tailwind classes
+   Content here using HTML with Tailwind classes
    ```
 3. Add icon SVG conditional to `index.njk` and `read-the-label.njk` if using a new icon name
 
 ### Eleventy Configuration
 
 Key features in `eleventy.config.js`:
+- `EleventyI18nPlugin` with `defaultLanguage: "en"` and `errorMode: "allow-fallback"`
 - Pass-through copy for images and fonts (Tailwind writes CSS directly to `_site/`, no passthrough needed)
 - Watch target for CSS directory
 - Custom filter `findBySlug` for finding topics by slug
@@ -174,12 +179,24 @@ Key features in `eleventy.config.js`:
 - Input directory: `src`, Output: `_site`
 - Template formats: njk, md, html
 
+### Internationalisation
+
+The site has i18n infrastructure in place but no translations yet.
+
+- English content lives at root (`src/`) and is served at `/`
+- Future translated pages go in `src/de/`, `src/fr/`, `src/nl/` and are served at `/de/`, `/fr/`, `/nl/`
+- `site.json` lists supported languages: `["en", "de", "fr", "nl"]`
+- All content pages have `contentVersion: "YYYY-MM-DD"` in frontmatter
+- When a translation is created, the translated page should include `translatedFrom: "YYYY-MM-DD"` matching the English `contentVersion` at the time of translation
+- If the English `contentVersion` is newer than a translated page's `translatedFrom`, the translation is out of date
+
 ### Images
 
 Images stored in `src/assets/images/`:
 - `cropped-web-new.png` - EBCU logo used in header and footer
 - `sven-brandsma-PnA6lW19eMg-unsplash.jpg` - Hero background image
-- Various content images: `man_label_2.jpg`, `bar_in_ireland.jpg`, `couple.jpg`, `ebcu.jpg`, `brewery.jpg`, `alcohol.jpg`, etc.
+- Various content images: `man_label_2.jpg`, `bar_in_ireland.jpg`, `couple.jpg`, `ebcu.jpg`, `brewery.jpg`, `alcohol.jpg`, `porterhousetaps.jpg`, etc.
+- Logo images: `pgi_logo.png`, `pdo_logo.png`, `etg_logo.png`, `TSG-logo-UK.jpg`, `trappist.png`, `abbey-beer.jpg`, `pregnant.png`, `drink_drive.png`, `drinking_age.png`
 
 ### Development Notes
 
