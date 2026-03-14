@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: FAQ
+contentVersion: "2026-02-24"
+translatedFrom: "2026-02-24"
+---
+
+{# Page header #}
+<div class="bg-ebcu-blue pt-24 pb-12">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Häufig gestellte Fragen</h1>
+    <p class="mt-4 text-lg text-white/90 max-w-2xl">
+      Häufige Fragen zu Know Your Beer, Bierkennzeichnung und Verbraucherrechten.
+    </p>
+  </div>
+</div>
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+  <div class="my-8">
+    <img src="/assets/images/couple.jpg" alt="Paar diskutiert Bierauswahl" class="w-full rounded-lg border border-gray-200 shadow-sm">
+    <p class="text-sm text-gray-600 mt-2 italic">
+      Das Verstehen von Bieretikettten hilft Ihnen, fundierte Entscheidungen zu treffen und bessere Gespräche über das, was Sie trinken, zu führen.
+    </p>
+  </div>
+
+  <div class="space-y-4">
+    {% for item in faqs %}
+    <details class="group rounded-xl border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between cursor-pointer p-5 bg-white hover:bg-gray-50 transition-colors">
+        <span class="font-medium text-gray-900 text-left pr-4">{{ item.question }}</span>
+        <span class="flex-shrink-0 text-gray-400 group-open:rotate-180 transition-transform">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </span>
+      </summary>
+      <div class="px-5 pb-5 text-gray-600">
+        <p>{{ item.answer }}</p>
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+
+  <div class="border-t border-gray-200 pt-12 mt-12">
+    <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
+      <h2 class="font-semibold text-gray-900 text-lg mb-2">Haben Sie eine Frage, die hier nicht beantwortet wird?</h2>
+      <p class="text-gray-600 mb-4">
+        Wir erstellen diese Ressource auf der Grundlage echter Verbraucherfragen. Wenn Sie etwas über die Bierkennzeichnung oder Ihre Rechte als Verbraucher wissen möchten, teilen Sie uns dies mit.
+      </p>
+      <a href="/de/about/" class="inline-flex items-center text-ebcu-gold font-medium hover:text-ebcu-gold-dark">
+        Kontakt aufnehmen
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
+</div>

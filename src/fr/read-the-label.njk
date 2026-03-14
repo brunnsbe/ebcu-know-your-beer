@@ -1,0 +1,129 @@
+---
+layout: layouts/base.njk
+title: Lire l'étiquette
+contentVersion: "2026-02-24"
+translatedFrom: "2026-02-24"
+---
+
+{# Page header #}
+<div class="bg-ebcu-blue pt-24 pb-12">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Comment lire une étiquette de bière</h1>
+    <p class="mt-4 text-lg text-white/90 max-w-2xl">
+      La plupart des étiquettes sont techniquement correctes, mais pas toujours faciles à interpréter. Voici ce qu'il faut rechercher et pourquoi cela compte.
+    </p>
+  </div>
+</div>
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+  <div class="rounded-xl border border-gray-200 bg-gray-50 p-6 mb-12">
+    <p class="text-gray-600">
+      Les étiquettes de bière dans l'UE doivent inclure certaines informations obligatoires, mais la façon dont elles sont présentées peut varier considérablement.
+      Comprendre ce qui est requis, ce qui est optionnel et ce qui relève du marketing vous aide à faire des choix éclairés.
+    </p>
+  </div>
+
+  <div class="my-8">
+    <img src="/assets/images/man_label_2.jpg" alt="Lecture d'une étiquette de bière" class="w-full rounded-lg border border-gray-200 shadow-sm">
+    <p class="text-sm text-gray-600 mt-2 italic">
+      Prendre le temps de lire les étiquettes de bière vous aide à comprendre ce que vous achetez et à faire de meilleurs choix.
+    </p>
+  </div>
+
+  {# Topic Cards #}
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for topic in topics %}
+    <a href="/fr/topics/{{ topic.slug }}/" class="block rounded-2xl bg-ebcu-blue p-6 transition-all hover:shadow-lg hover:bg-ebcu-blue-dark group">
+      <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white mb-4">
+        {% if topic.icon == "percent" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M17 17h.01M7 17L17 7"></path><circle cx="7" cy="7" r="2" stroke-width="2"></circle><circle cx="17" cy="17" r="2" stroke-width="2"></circle></svg>
+        {% elif topic.icon == "grain" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+        {% elif topic.icon == "users" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+        {% elif topic.icon == "badge" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+        {% elif topic.icon == "calendar" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        {% elif topic.icon == "storage" %}
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+        {% endif %}
+      </div>
+      <h3 class="font-semibold text-white text-lg">{{ topic.title }}</h3>
+      <p class="mt-2 text-white/90 text-sm">{{ topic.lead }}</p>
+      <span class="mt-4 inline-flex items-center text-ebcu-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+        En savoir plus
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+
+  {# Quick reference #}
+  <div class="border-t border-gray-200 pt-12 mt-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Référence rapide</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5">
+        <h3 class="font-semibold text-gray-900 mb-3">Requis par la loi</h3>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>Degré d'alcool (ABV)</li>
+          <li>Quantité nette (volume)</li>
+          <li>Informations sur les allergènes</li>
+          <li>Date limite de consommation</li>
+          <li>Pays d'origine</li>
+          <li>Nom et adresse de l'entreprise</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5">
+        <h3 class="font-semibold text-gray-900 mb-3">Volontaire (engagement du secteur)</h3>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>Liste des ingrédients</li>
+          <li>Informations nutritionnelles</li>
+          <li>(Peut être via QR code)</li>
+          <li class="text-xs text-gray-500 pt-1">95 % des volumes de bière de l'UE incluent désormais les ingrédients grâce à l'autorégulation du secteur</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5">
+        <h3 class="font-semibold text-gray-900 mb-3">Souvent optionnel</h3>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>Lieu de brassage</li>
+          <li>Date d'embouteillage</li>
+          <li>Suggestions de service</li>
+          <li>Notes de dégustation</li>
+          <li><a href="/fr/topics/marks-logos-certifications/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Récompenses et médailles de compétition</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5 mt-6">
+      <p class="font-medium text-gray-700">Logos d'avertissement sanitaire et de consommation responsable</p>
+      <p class="text-sm text-gray-600 mt-1">
+        Les avertissements liés à la grossesse, les symboles relatifs à l'alcool au volant, les logos d'âge minimum et les marques « Boire Responsablement »
+        sont traités dans la rubrique
+        <a href="/fr/topics/alcohol-style/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Teneur en alcool &amp; style de bière</a>.
+      </p>
+    </div>
+
+    <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-5 mt-6">
+      <p class="font-medium text-gray-700">Marques, logos & certifications</p>
+      <p class="text-sm text-gray-600 mt-1">
+        Les marques de qualité UE (IGP, AOP, STG), les désignations Trappiste et Bière d'Abbaye belge, les logos
+        de brasseurs indépendants et les récompenses de compétition sont traités dans la rubrique
+        <a href="/fr/topics/marks-logos-certifications/" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Marques, logos &amp; certifications</a>.
+      </p>
+    </div>
+
+    <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5 mt-6">
+      <h3 class="font-semibold text-gray-900 mb-2">Comprendre le paysage réglementaire</h3>
+      <p class="text-sm text-gray-700">
+        Contrairement au vin, la bière est actuellement exemptée de l'obligation d'étiquetage des ingrédients et des valeurs nutritionnelles en vertu du droit alimentaire de l'UE.
+        Le secteur brassicole s'est volontairement engagé à fournir ces informations via un
+        <a href="https://brewup.eu/documents/advocate/memorandum-of-understanding-on-listing-ingredients-and-nutrition-information-for-alcoholic-beverages" class="text-ebcu-gold hover:text-ebcu-gold-dark font-medium">Memorandum of Understanding de 2019</a> avec l'UE.
+        L'Irlande devrait devenir le premier pays de l'UE à rendre obligatoire un étiquetage complet de l'alcool (désormais prévu en septembre 2028).
+        L'<a href="https://commission.europa.eu/strategy-and-policy/policies/consumers/consumer-protection-policy/2030-consumer-agenda_en" class="text-ebcu-gold hover:text-ebcu-gold-dark font-medium">Agenda Consommateurs 2030 de l'UE</a>
+        continue de soutenir l'autonomisation des consommateurs et la transparence dans tous les secteurs.
+      </p>
+    </div>
+  </div>
+
+</div>

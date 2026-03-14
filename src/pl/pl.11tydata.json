@@ -1,0 +1,93 @@
+{
+  "lang": "pl",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Zawartość alkoholu, wielkość porcji i styl piwa",
+      "shortTitle": "Alkohol i Styl",
+      "lead": "ABV, standardowe jednostki i co style piwa mówią o oczekiwaniach smakowych.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Składniki i alergeny",
+      "shortTitle": "Składniki i Alergeny",
+      "lead": "Co tak naprawdę jest w twoim piwie — od podstawowych składników po dodatki i informacje o alergenach.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Producent i pochodzenie",
+      "shortTitle": "Producent i Pochodzenie",
+      "lead": "Kto naprawdę uwarzył twoje piwo i gdzie — zwroty producenta, browarnictwo kontraktowe i jak znaleźć rzeczywiste miejsce produkcji.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Znaki, logo i certyfikaty",
+      "shortTitle": "Znaki i Logo",
+      "lead": "Unijne oznaczenia geograficzne (ChOG, ChNP, GTS), certyfikaty Trapistów i Belgijskiego Piwa Klasztornego, logo niezależnych browarów i nagrody konkursowe.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Świeżość, daty i identyfikowalność",
+      "shortTitle": "Świeżość i Daty",
+      "lead": "Data pakowania vs data minimalnej trwałości, kody partii i jak różne style piwa starzeją się z wiekiem.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Przechowywanie, osad i piwa żywe",
+      "shortTitle": "Przechowywanie i Serwowanie",
+      "lead": "Optymalne warunki przechowywania, rozumienie osadu i serwowanie piw refermentowanych w butelce i piw beczkowych.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Czym jest Know Your Beer?",
+      "answer": "Know Your Beer to ogólnoeuropejska kampania edukacyjna dla konsumentów prowadzona przez EBCU (European Beer Consumers Union). Pomaga konsumentom rozumieć etykiety piwa, dokonywać świadomych wyborów i wiedzieć, jakie pytania zadawać przy zakupie piwa. Kampania wspiera szersze cele UE w zakresie wzmocnienia pozycji konsumentów w ramach Programu Konsumenckiego 2030."
+    },
+    {
+      "question": "Czy etykietowanie składników jest obowiązkowe na piwie?",
+      "answer": "Jeszcze nie na poziomie UE. W przeciwieństwie do wina, piwo wciąż jest zwolnione z obowiązku etykietowania składników i wartości odżywczych na mocy unijnego prawa żywnościowego. Jednak branża piwowarska podpisała Memorandum of Understanding z Komisją Europejską w 2019 roku, dobrowolnie zobowiązując się do udostępniania tych informacji. Do 2022 roku 95% wolumenu piwa w butelkach i puszkach w UE zawierało listę składników. Irlandia ma być pierwszym krajem UE, który uczyni obowiązkowym kompleksowe oznakowanie alkoholu, spodziewane teraz we wrześniu 2028 roku."
+    },
+    {
+      "question": "Co oznacza „warzone dla\" na etykiecie?",
+      "answer": "„Warzone dla\" zazwyczaj oznacza, że piwo zostało uwędzone kontraktowo w innym browarze niż właściciel marki. Właściciel marki projektuje recepturę i posiada markę, ale inny browar je produkuje. Jest to powszechna i legalna praktyka."
+    },
+    {
+      "question": "Jak mogę dowiedzieć się, gdzie faktycznie zostało uwarzone piwo?",
+      "answer": "Szukaj sformułowań takich jak „warzone przez\", „warzone w\" lub adresu browaru. Jeśli widnieje „warzone dla\" lub „dystrybuowane przez\", rzeczywiste miejsce warzenia może być inne. Niektóre piwa zawierają kody partii wskazujące zakład produkcyjny."
+    },
+    {
+      "question": "Jaka jest różnica między „datą minimalnej trwałości\" a „datą pakowania\"?",
+      "answer": "Data minimalnej trwałości wskazuje, do kiedy piwo powinno być na optymalnym poziomie jakości. Data pakowania lub rozlewu wskazuje, kiedy zostało zapakowane. W przypadku piw bogatych w chmiel, takich jak IPA, data pakowania jest często bardziej przydatna do oceny świeżości."
+    },
+    {
+      "question": "Czy EBCU jest niezależne?",
+      "answer": "Tak. EBCU jest federacją niezależnych organizacji konsumenckich w całej Europie. Każde zewnętrzne finansowanie Know Your Beer jest ujawniane publicznie, a finansowanie nie daje kontroli redakcyjnej. Odpowiedzialność redakcyjna pozostaje przy EBCU."
+    },
+    {
+      "question": "Czy browary lub marki mogą współpracować z Know Your Beer?",
+      "answer": "Chętnie nawiązujemy partnerstwa z organizacjami konsumenckimi, stowarzyszeniami browarniczymi i sieciami niezależnych browarów, które podzielają nasze zaangażowanie w przejrzystość. Nie przyjmujemy partnerstw, które zagrażałyby niezależności redakcyjnej."
+    },
+    {
+      "question": "Czy Know Your Beer będzie dostępne w moim języku?",
+      "answer": "Planujemy oferować treści w kilku językach europejskich. Pierwsze uruchomienie odbędzie się w języku angielskim, a tłumaczenia będą następować w zależności od zainteresowania partnerów i dostępnych zasobów."
+    },
+    {
+      "question": "Dlaczego niektóre piwa mają kody QR na etykiecie?",
+      "answer": "Kody QR pozwalają browarom dostarczać szczegółowe informacje (składniki, wartości odżywcze, alergeny, nuty smakowe) bez przeładowywania fizycznej etykiety. Jest to już obowiązkowe dla wina. Wielu browarników dobrowolnie przyjmuje to podejście. Skanując kod QR, upewnij się, że prowadzi do oficjalnej strony browaru, a nie do strony trzeciej."
+    },
+    {
+      "question": "Czym jest Program Konsumencki UE 2030?",
+      "answer": "Program Konsumencki UE 2030 to pięcioletnie ramy strategiczne Komisji Europejskiej w zakresie polityki konsumenckiej, przyjęte w listopadzie 2025 roku. Koncentruje się na ukończeniu jednolitego rynku, sprawiedliwości cyfrowej, zrównoważonej konsumpcji i wzmocnieniu egzekwowania przepisów. Choć nie nakłada szczegółowych zmian w etykietowaniu piwa, wspiera upodmiotowienie i przejrzystość konsumentów we wszystkich sektorach. Know Your Beer jest zgodne z tymi celami, pomagając konsumentom w dokonywaniu świadomych wyborów."
+    },
+    {
+      "question": "Jakie są moje prawa, gdy pytam o piwo w barze lub restauracji?",
+      "answer": "Zgodnie z unijnym prawem żywnościowym pracownicy muszą być w stanie na żądanie podać informacje o alergenach dla każdego produktu. Pełny przegląd tego, o co możesz pytać i na co zwracać uwagę w lokalu, znajdziesz w sekcji barów i restauracji tej strony."
+    }
+  ]
+}

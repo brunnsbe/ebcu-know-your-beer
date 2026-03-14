@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+title: Accueil
+isHome: true
+contentVersion: "2026-02-24"
+translatedFrom: "2026-02-24"
+---
+
+{# Hero Section with dark overlay #}
+<section class="relative min-h-[600px] flex items-center bg-gray-900 pt-20" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/sven-brandsma-PnA6lW19eMg-unsplash.jpg') center 10%/cover;">
+  <div class="mx-auto max-w-7xl w-full px-4 sm:px-6 py-32 text-white">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-3xl">
+      Apprenez à lire une étiquette de bière et à faire des choix éclairés
+    </h1>
+
+    <p class="mt-6 text-lg sm:text-xl text-white/90 max-w-2xl leading-relaxed">
+      Know Your Beer est la campagne européenne d'éducation des consommateurs de l'EBCU sur la lecture des étiquettes de bière et la transparence. Ce site vous aidera à comprendre ce qui figure sur votre étiquette de bière et pourquoi cela compte.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="/fr/read-the-label/" class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-medium text-ebcu-blue hover:bg-gray-100 transition-colors">
+        Commencer : Lire l'étiquette
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+      <a href="/fr/on-trade/" class="inline-flex items-center gap-2 rounded-lg border-2 border-white/50 text-white px-6 py-3 font-medium hover:bg-white/10 transition-colors">
+        Checklist cafés & restaurants
+      </a>
+    </div>
+  </div>
+</section>
+
+{# What you'll learn - Topic Cards #}
+<section class="py-20 bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Ce que vous apprendrez</h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+        Six thèmes essentiels pour déchiffrer les étiquettes de bière et faire des choix plus éclairés.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for topic in topics %}
+      <a href="/fr/topics/{{ topic.slug }}/" class="block rounded-2xl bg-ebcu-blue p-6 transition-all hover:shadow-lg hover:bg-ebcu-blue-dark group">
+        <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white mb-4">
+          {% if topic.icon == "percent" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M17 17h.01M7 17L17 7"></path><circle cx="7" cy="7" r="2" stroke-width="2"></circle><circle cx="17" cy="17" r="2" stroke-width="2"></circle></svg>
+          {% elif topic.icon == "grain" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          {% elif topic.icon == "users" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          {% elif topic.icon == "badge" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+          {% elif topic.icon == "calendar" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+          {% elif topic.icon == "storage" %}
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+          {% endif %}
+        </div>
+        <h3 class="font-semibold text-white text-lg">{{ topic.title }}</h3>
+        <p class="mt-2 text-white/90 text-sm">{{ topic.lead }}</p>
+        <span class="mt-4 inline-flex items-center text-ebcu-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+          En savoir plus
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Partners Section #}
+<section class="py-20 bg-gray-50">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900">Partenaires</h2>
+    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+      Nous sommes ouverts aux partenariats avec des organisations de consommateurs, des associations brassicoles et des réseaux de brasseurs indépendants. Les partenaires confirmés seront listés ici.
+    </p>
+
+    <div class="mt-8 rounded-2xl border-2 border-dashed border-gray-300 bg-white p-8">
+      <p class="text-gray-500 italic">Les logos et informations des partenaires apparaîtront ici une fois les partenariats confirmés.</p>
+    </div>
+
+    <p class="mt-8 text-gray-600">
+      <span class="font-medium">Lancement prévu :</span> {{ site.launchWindow }}
+    </p>
+  </div>
+</section>

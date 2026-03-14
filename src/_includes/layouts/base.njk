@@ -8,18 +8,29 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body class="min-h-screen bg-white text-gray-700 flex flex-col">
+
+{# Compute language helpers #}
+{% set uiLang = page.lang or 'en' %}
+{% set langPrefix = '' %}
+{% if page.lang and page.lang != 'en' %}
+  {% set langPrefix = '/' + page.lang %}
+  {% set basePath = page.url | replace('/' + page.lang + '/', '/') %}
+{% else %}
+  {% set basePath = page.url %}
+{% endif %}
+
   <header class="sticky top-0 z-50 bg-ebcu-blue shadow-md">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
+      <a href="{{ langPrefix }}/" class="flex items-center gap-3">
         <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
         <div class="font-bold text-2xl text-ebcu-gold">{{ site.name }}</div>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-lg text-white">
-        <a href="/" class="hover:opacity-80 transition-opacity{% if page.url == '/' %} font-medium{% endif %}">Home</a>
-        <a href="/read-the-label/" class="hover:opacity-80 transition-opacity{% if page.url == '/read-the-label/' or page.url.startsWith('/topics/') %} font-medium{% endif %}">Read the label</a>
-        <a href="/on-trade/" class="hover:opacity-80 transition-opacity{% if page.url == '/on-trade/' %} font-medium{% endif %}">On-trade</a>
-        <a href="/faq/" class="hover:opacity-80 transition-opacity{% if page.url == '/faq/' %} font-medium{% endif %}">FAQ</a>
-        <a href="/about/" class="hover:opacity-80 transition-opacity{% if page.url == '/about/' %} font-medium{% endif %}">About</a>
+        <a href="{{ langPrefix }}/" class="hover:opacity-80 transition-opacity{% if basePath == '/' %} font-medium{% endif %}">{{ ui[uiLang].nav_home }}</a>
+        <a href="{{ langPrefix }}/read-the-label/" class="hover:opacity-80 transition-opacity{% if basePath == '/read-the-label/' or '/topics/' in basePath %} font-medium{% endif %}">{{ ui[uiLang].nav_read }}</a>
+        <a href="{{ langPrefix }}/on-trade/" class="hover:opacity-80 transition-opacity{% if basePath == '/on-trade/' %} font-medium{% endif %}">{{ ui[uiLang].nav_ontrade }}</a>
+        <a href="{{ langPrefix }}/faq/" class="hover:opacity-80 transition-opacity{% if basePath == '/faq/' %} font-medium{% endif %}">{{ ui[uiLang].nav_faq }}</a>
+        <a href="{{ langPrefix }}/about/" class="hover:opacity-80 transition-opacity{% if basePath == '/about/' %} font-medium{% endif %}">{{ ui[uiLang].nav_about }}</a>
 
         {# Language selector #}
         <div class="relative">
@@ -27,26 +38,32 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
             </svg>
-            <span>EN</span>
+            <span>{{ uiLang | upper }}</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
           <div id="language-menu" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg overflow-hidden z-50">
-            <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-gray-50 transition-colors">
-              <span class="font-semibold">English</span>
+            <a href="{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'en' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
+              <span>English</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
+            <a href="/de{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'de' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
               <span>Deutsch</span>
-              <span class="text-xs ml-2">(soon)</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
+            <a href="/fr{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'fr' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
               <span>Français</span>
-              <span class="text-xs ml-2">(soon)</span>
             </a>
-            <a href="#" class="block px-4 py-3 text-gray-400 cursor-not-allowed" aria-disabled="true" tabindex="-1">
+            <a href="/it{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'it' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
+              <span>Italiano</span>
+            </a>
+            <a href="/es{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'es' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
+              <span>Español</span>
+            </a>
+            <a href="/pl{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'pl' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
+              <span>Polski</span>
+            </a>
+            <a href="/nl{{ basePath }}" class="block px-4 py-3 transition-colors {% if uiLang == 'nl' %}text-gray-900 bg-gray-50 font-semibold{% else %}text-gray-700 hover:bg-gray-50{% endif %}">
               <span>Nederlands</span>
-              <span class="text-xs ml-2">(soon)</span>
             </a>
           </div>
         </div>
@@ -58,24 +75,27 @@
       </button>
     </div>
     <nav id="mobile-menu" class="hidden md:hidden bg-ebcu-blue-dark px-4 py-3 space-y-2 text-white text-lg">
-      <a href="/" class="block py-2 hover:opacity-80">Home</a>
-      <a href="/read-the-label/" class="block py-2 hover:opacity-80">Read the label</a>
-      <a href="/on-trade/" class="block py-2 hover:opacity-80">On-trade</a>
-      <a href="/faq/" class="block py-2 hover:opacity-80">FAQ</a>
-      <a href="/about/" class="block py-2 hover:opacity-80">About</a>
+      <a href="{{ langPrefix }}/" class="block py-2 hover:opacity-80">{{ ui[uiLang].nav_home }}</a>
+      <a href="{{ langPrefix }}/read-the-label/" class="block py-2 hover:opacity-80">{{ ui[uiLang].nav_read }}</a>
+      <a href="{{ langPrefix }}/on-trade/" class="block py-2 hover:opacity-80">{{ ui[uiLang].nav_ontrade }}</a>
+      <a href="{{ langPrefix }}/faq/" class="block py-2 hover:opacity-80">{{ ui[uiLang].nav_faq }}</a>
+      <a href="{{ langPrefix }}/about/" class="block py-2 hover:opacity-80">{{ ui[uiLang].nav_about }}</a>
 
       <div class="border-t border-white/20 pt-2 mt-2">
         <button id="mobile-language-toggle" class="flex items-center gap-2 py-2 w-full hover:opacity-80">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
           </svg>
-          <span>Language: EN</span>
+          <span>Language: {{ uiLang | upper }}</span>
         </button>
         <div id="mobile-language-menu" class="hidden pl-7 space-y-1 text-base">
-          <a href="#" class="block py-2 text-white font-semibold">English</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Deutsch (soon)</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Français (soon)</a>
-          <a href="#" class="block py-2 text-white/50 cursor-not-allowed" aria-disabled="true" tabindex="-1">Nederlands (soon)</a>
+          <a href="{{ basePath }}" class="block py-2 {% if uiLang == 'en' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">English</a>
+          <a href="/de{{ basePath }}" class="block py-2 {% if uiLang == 'de' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Deutsch</a>
+          <a href="/fr{{ basePath }}" class="block py-2 {% if uiLang == 'fr' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Français</a>
+          <a href="/it{{ basePath }}" class="block py-2 {% if uiLang == 'it' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Italiano</a>
+          <a href="/es{{ basePath }}" class="block py-2 {% if uiLang == 'es' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Español</a>
+          <a href="/pl{{ basePath }}" class="block py-2 {% if uiLang == 'pl' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Polski</a>
+          <a href="/nl{{ basePath }}" class="block py-2 {% if uiLang == 'nl' %}text-white font-semibold{% else %}text-white/70 hover:text-white{% endif %}">Nederlands</a>
         </div>
       </div>
     </nav>
@@ -92,32 +112,32 @@
         <div class="grid gap-8 md:grid-cols-3">
           {# Logo and description #}
           <div>
-            <a href="/" class="flex items-center gap-3">
+            <a href="{{ langPrefix }}/" class="flex items-center gap-3">
               <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
               <div class="font-bold text-xl text-gray-900">{{ site.name }}</div>
             </a>
             <p class="mt-4 text-sm text-gray-600">
-              A consumer education initiative by the European Beer Consumers Union.
+              {{ ui[uiLang].footer_desc }}
             </p>
           </div>
 
           {# Quick Links #}
           <div>
-            <h3 class="font-semibold text-gray-900 mb-4">Quick Links</h3>
+            <h3 class="font-semibold text-gray-900 mb-4">{{ ui[uiLang].footer_quicklinks }}</h3>
             <ul class="space-y-2 text-sm">
-              <li><a href="/read-the-label/" class="text-gray-600 hover:text-ebcu-blue">Read the Label</a></li>
-              <li><a href="/on-trade/" class="text-gray-600 hover:text-ebcu-blue">On-trade Checklist</a></li>
-              <li><a href="/faq/" class="text-gray-600 hover:text-ebcu-blue">FAQ</a></li>
-              <li><a href="/about/" class="text-gray-600 hover:text-ebcu-blue">About EBCU</a></li>
+              <li><a href="{{ langPrefix }}/read-the-label/" class="text-gray-600 hover:text-ebcu-blue">{{ ui[uiLang].footer_readlabel }}</a></li>
+              <li><a href="{{ langPrefix }}/on-trade/" class="text-gray-600 hover:text-ebcu-blue">{{ ui[uiLang].footer_ontrade }}</a></li>
+              <li><a href="{{ langPrefix }}/faq/" class="text-gray-600 hover:text-ebcu-blue">{{ ui[uiLang].footer_faq }}</a></li>
+              <li><a href="{{ langPrefix }}/about/" class="text-gray-600 hover:text-ebcu-blue">{{ ui[uiLang].footer_about }}</a></li>
             </ul>
           </div>
 
           {# Label Topics #}
           <div>
-            <h3 class="font-semibold text-gray-900 mb-4">Label Topics</h3>
+            <h3 class="font-semibold text-gray-900 mb-4">{{ ui[uiLang].footer_labeltopics }}</h3>
             <ul class="space-y-2 text-sm">
               {% for topic in topics %}
-              <li><a href="/topics/{{ topic.slug }}/" class="text-gray-600 hover:text-ebcu-blue">{{ topic.shortTitle or topic.title }}</a></li>
+              <li><a href="{{ langPrefix }}/topics/{{ topic.slug }}/" class="text-gray-600 hover:text-ebcu-blue">{{ topic.shortTitle or topic.title }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -129,8 +149,8 @@
     <div class="border-t border-gray-200">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-6">
         <div class="rounded-lg bg-ebcu-blue-light p-4">
-          <p class="font-semibold text-gray-900 text-sm">Independence & Transparency</p>
-          <p class="text-sm text-gray-600 mt-1">Any external funding will be disclosed publicly. Funding does not grant editorial control. Editorial responsibility remains with EBCU.</p>
+          <p class="font-semibold text-gray-900 text-sm">{{ ui[uiLang].independence_title }}</p>
+          <p class="text-sm text-gray-600 mt-1">{{ ui[uiLang].independence_body }}</p>
         </div>
       </div>
     </div>
@@ -138,7 +158,7 @@
     {# Copyright #}
     <div class="border-t border-gray-200">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-        <p>&copy; {% year %} European Beer Consumers Union (EBCU). All rights reserved.</p>
+        <p>&copy; {% year %} {{ ui[uiLang].copyright }}</p>
         <a href="https://www.ebcu.org" class="text-gray-500 hover:text-ebcu-blue">www.ebcu.org</a>
       </div>
     </div>

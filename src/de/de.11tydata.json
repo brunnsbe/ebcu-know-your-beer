@@ -1,0 +1,93 @@
+{
+  "lang": "de",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Alkoholgehalt, Portionsgröße & Bierstil",
+      "shortTitle": "Alkohol & Stil",
+      "lead": "ABV, Standarddrinks und was Bierstile über Geschmackserwartungen aussagen.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Zutaten & Allergene",
+      "shortTitle": "Zutaten & Allergene",
+      "lead": "Was wirklich in Ihrem Bier steckt – von Grundzutaten bis zu Zusatzstoffen und Allergeninformationen.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Hersteller & Herkunft",
+      "shortTitle": "Hersteller & Herkunft",
+      "lead": "Wer Ihr Bier wirklich gebraut hat und wo – Herstellerphrasen, Lohnbrauerei und die tatsächliche Brauortsbestimmung.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Zeichen, Logos & Zertifizierungen",
+      "shortTitle": "Zeichen & Logos",
+      "lead": "EU-Qualitätszeichen (g.g.A., g.U., g.t.S.), Trappisten- und Abteibier-Zertifizierungen, Logos unabhängiger Brauer und Wettbewerbsauszeichnungen.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Frische, Daten & Rückverfolgbarkeit",
+      "shortTitle": "Frische & Daten",
+      "lead": "Abfüll- vs. Mindesthaltbarkeitsdatum, Chargencodes und wie verschiedene Bierstile altern.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Lagerung, Sediment & Naturtrub-Bierpflege",
+      "shortTitle": "Lagerung & Ausschank",
+      "lead": "Optimale Lagerbedingungen, Sediment verstehen und flaschenvergorene sowie Fassbiere servieren.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Was ist Know Your Beer?",
+      "answer": "Know Your Beer ist eine europaweite Verbraucherbildungskampagne des EBCU (European Beer Consumers Union). Sie hilft Verbrauchern, Bieretikettten zu verstehen, fundierte Entscheidungen zu treffen und zu wissen, welche Fragen sie beim Bierkauf stellen können. Die Kampagne unterstützt die übergeordneten Ziele der EU zur Verbraucherstärkung im Rahmen der Verbraucheragenda 2030."
+    },
+    {
+      "question": "Ist die Zutatenkennzeichnung bei Bier Pflicht?",
+      "answer": "Noch nicht auf EU-Ebene. Anders als Wein ist Bier noch von der Pflicht zur Zutatenkennzeichnung und Nährwertangabe nach EU-Lebensmittelrecht ausgenommen. Die Braubranche hat sich jedoch durch ein Memorandum of Understanding aus dem Jahr 2019 mit der EU freiwillig verpflichtet, diese Informationen bereitzustellen. Bis 2022 enthielten 95 % der in Flaschen und Dosen vermarkteten Biermengen Zutatenlisten. Irland soll das erste EU-Land werden, das eine umfassende Alkoholkennzeichnung vorschreibt – nun voraussichtlich im September 2028."
+    },
+    {
+      "question": "Was bedeutet „gebraut für\" auf einem Etikett?",
+      "answer": "„Gebraut für\" bedeutet in der Regel, dass das Bier im Lohnbrauereiverfahren in einer anderen Brauerei als der des Markeninhabers hergestellt wurde. Der Markeninhaber entwirft das Rezept und besitzt die Marke, aber eine andere Brauerei stellt es her. Dies ist eine gängige und rechtlich zulässige Praxis."
+    },
+    {
+      "question": "Wie kann ich herausfinden, wo ein Bier tatsächlich gebraut wurde?",
+      "answer": "Achten Sie auf Formulierungen wie „gebraut bei\", „gebraut in\" oder eine Brauereiaddresse. Wenn es heißt „gebraut für\" oder „vertrieben von\", kann der tatsächliche Brauort abweichen. Einige Biere enthalten Chargencodes, die auf die Produktionsstätte hinweisen."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen „Mindesthaltbarkeitsdatum\" und „Abfülldatum\"?",
+      "answer": "Das Mindesthaltbarkeitsdatum gibt an, bis wann das Bier voraussichtlich optimale Qualität hat. Das Abfülldatum oder der Abfülltag gibt an, wann es abgefüllt wurde. Bei hopfenbetonten Bieren wie IPAs ist das Abfülldatum oft nützlicher, um die Frische zu beurteilen."
+    },
+    {
+      "question": "Ist EBCU unabhängig?",
+      "answer": "Ja. EBCU ist ein Verbund unabhängiger Verbraucherorganisationen in Europa. Jede externe Finanzierung für Know Your Beer wird öffentlich offengelegt, und Finanzierung gewährt keine redaktionelle Kontrolle. Die redaktionelle Verantwortung liegt beim EBCU."
+    },
+    {
+      "question": "Können Brauereien oder Marken mit Know Your Beer kooperieren?",
+      "answer": "Wir begrüßen Partnerschaften mit Verbraucherorganisationen, Brauereiverbänden und Netzwerken unabhängiger Brauer, die unser Engagement für Transparenz teilen. Wir akzeptieren keine Partnerschaften, die die redaktionelle Unabhängigkeit gefährden würden."
+    },
+    {
+      "question": "Wird Know Your Beer in meiner Sprache verfügbar sein?",
+      "answer": "Wir planen, Inhalte in mehreren europäischen Sprachen anzubieten. Der erste Start erfolgt auf Englisch, weitere Übersetzungen folgen je nach Partnerinteresse und verfügbaren Ressourcen."
+    },
+    {
+      "question": "Warum haben einige Biere QR-Codes auf dem Etikett?",
+      "answer": "QR-Codes ermöglichen es Brauern, detaillierte Informationen (Zutaten, Nährwerte, Allergene, Tasting Notes) bereitzustellen, ohne das physische Etikett zu überladen. Bei Wein ist dies für die vollständige Nährwert- und Zutatenliste bereits Pflicht. Viele Brauer übernehmen diesen Ansatz freiwillig. Wenn Sie einen QR-Code scannen, stellen Sie sicher, dass er zur offiziellen Website des Brauers führt und nicht zu einer Drittanbieterseite."
+    },
+    {
+      "question": "Was ist die EU-Verbraucheragenda 2030?",
+      "answer": "Die EU-Verbraucheragenda 2030 ist der strategische Fünfjahresrahmen der Europäischen Kommission für die Verbraucherpolitik, der im November 2025 angenommen wurde. Sie konzentriert sich auf die Vollendung des Binnenmarkts, digitale Fairness, nachhaltigen Konsum und eine stärkere Durchsetzung. Obwohl sie keine spezifischen Änderungen bei der Bierkennzeichnung vorschreibt, unterstützt sie die Stärkung und Transparenz der Verbraucher in allen Sektoren. Know Your Beer ist auf diese Ziele ausgerichtet, indem es Verbrauchern hilft, fundierte Entscheidungen zu treffen."
+    },
+    {
+      "question": "Was sind meine Rechte, wenn ich in einer Bar oder einem Restaurant nach dem Bier frage?",
+      "answer": "Nach EU-Lebensmittelrecht müssen die Mitarbeiter auf Anfrage Allergeninformationen zu jedem Produkt bereitstellen können. Eine vollständige Übersicht darüber, was Sie fragen können und worauf Sie in einem Lokal achten sollten, finden Sie im Gastronomie-Bereich dieser Website."
+    }
+  ]
+}

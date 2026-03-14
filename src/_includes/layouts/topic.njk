@@ -3,12 +3,17 @@ layout: layouts/base.njk
 ---
 
 {% set topicData = topics | findBySlug(slug) %}
+{% set uiLang = page.lang or 'en' %}
+{% set langPrefix = '' %}
+{% if page.lang and page.lang != 'en' %}
+  {% set langPrefix = '/' + page.lang %}
+{% endif %}
 
 {# Topic header with blue background #}
 <div class="bg-ebcu-blue pt-24 pb-12">
   <div class="mx-auto max-w-7xl px-4 sm:px-6">
     <nav class="text-sm text-white/70 mb-4">
-      <a href="/read-the-label/" class="hover:text-white">Read the label</a>
+      <a href="{{ langPrefix }}/read-the-label/" class="hover:text-white">{{ ui[uiLang].breadcrumb_read }}</a>
       <span class="mx-2">/</span>
       <span class="text-white">{{ title }}</span>
     </nav>
@@ -26,7 +31,7 @@ layout: layouts/base.njk
 
   {# All topics #}
   <footer class="border-t border-gray-200 pt-12 mt-16">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">All topics</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ ui[uiLang].all_topics }}</h2>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {% for t in topics %}
         {% if t.slug == slug %}
@@ -50,7 +55,7 @@ layout: layouts/base.njk
           <p class="text-sm text-gray-600 mt-1">{{ t.lead }}</p>
         </div>
         {% else %}
-        <a class="rounded-xl bg-ebcu-blue p-5 hover:bg-ebcu-blue-dark hover:shadow-md transition-all" href="/topics/{{ t.slug }}/">
+        <a class="rounded-xl bg-ebcu-blue p-5 hover:bg-ebcu-blue-dark hover:shadow-md transition-all" href="{{ langPrefix }}/topics/{{ t.slug }}/">
           <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center text-white mb-3">
             {% if t.icon == "percent" %}
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M17 17h.01M7 17L17 7"></path><circle cx="7" cy="7" r="2" stroke-width="2"></circle><circle cx="17" cy="17" r="2" stroke-width="2"></circle></svg>

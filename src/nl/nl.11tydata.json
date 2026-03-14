@@ -1,0 +1,93 @@
+{
+  "lang": "nl",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Alcoholgehalte, portiegrootte en bierstijl",
+      "shortTitle": "Alcohol en Stijl",
+      "lead": "ABV, standaarddrankjes en wat bierstijlen zeggen over smaakverwachtingen.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Ingrediënten en allergenen",
+      "shortTitle": "Ingrediënten en Allergenen",
+      "lead": "Wat er werkelijk in je bier zit, van de basisingrediënten tot toevoegingen en informatie over allergenen.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Producent en herkomst",
+      "shortTitle": "Producent en Herkomst",
+      "lead": "Wie je bier werkelijk heeft gebrouwen en waar — producentsvermelding, contractbrouwen en hoe je de werkelijke brouwerij vindt.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Keurmerken, logo's en certificeringen",
+      "shortTitle": "Keurmerken en Logo's",
+      "lead": "EU-geografische aanduidingen (BGA, BOB, GTS), Trappist- en Belgisch Abdijbier-certificeringen, logo's van onafhankelijke brouwers en wedstrijdonderscheidingen.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Versheid, data en traceerbaarheid",
+      "shortTitle": "Versheid en Data",
+      "lead": "Verpakkingsdatum versus houdbaarheidsdatum, partijcodes en hoe verschillende stijlen verouderen.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Bewaring, bodembezinksel en levende bieren",
+      "shortTitle": "Bewaring en Schenken",
+      "lead": "Optimale bewaaromstandigheden, bodembezinksel begrijpen en fles- en vatgeconditioneerde bieren schenken.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Wat is Know Your Beer?",
+      "answer": "Know Your Beer is een pan-Europese consumentenvoorlichtingscampagne van EBCU (European Beer Consumers Union). Het helpt consumenten bieretikettten te begrijpen, weloverwogen keuzes te maken en te weten welke vragen ze moeten stellen bij het kopen van bier. De campagne ondersteunt de bredere EU-doelstellingen voor consumentenemancipatie in het kader van de EU Consumer Agenda 2030."
+    },
+    {
+      "question": "Is etikettering van ingrediënten verplicht op bier?",
+      "answer": "Nog niet op EU-niveau. In tegenstelling tot wijn is bier nog vrijgesteld van de verplichting tot etikettering van ingrediënten en voedingswaarden op grond van de EU-voedselwetgeving. De brouwerijsector ondertekende echter in 2019 een Memorandum of Understanding met de Europese Commissie, met de vrijwillige toezegging om deze informatie te verstrekken. In 2022 bevatte 95% van het biervolume in flessen en blikken in de EU een ingrediëntenlijst. Ierland zal naar verwachting het eerste EU-land zijn dat uitgebreide alcoholetikettering verplicht stelt, nu verwacht in september 2028."
+    },
+    {
+      "question": "Wat betekent 'gebrouwen voor' op een etiket?",
+      "answer": "'Gebrouwen voor' betekent doorgaans dat het bier contractueel is gebrouwen bij een andere brouwerij dan die van de merkeigenaar. De merkeigenaar ontwerpt het recept en bezit het merk, maar een andere brouwerij produceert het. Dit is een gangbare en legale praktijk."
+    },
+    {
+      "question": "Hoe kom ik erachter waar een bier werkelijk is gebrouwen?",
+      "answer": "Zoek naar vermeldingen zoals 'gebrouwen door', 'gebrouwen te' of een brouwerijadres. Als er staat 'gebrouwen voor' of 'gedistribueerd door', kan de werkelijke productielocatie anders zijn. Sommige bieren bevatten partijcodes die de productiefaciliteit aanduiden."
+    },
+    {
+      "question": "Wat is het verschil tussen 'ten minste houdbaar tot' en 'verpakkingsdatum'?",
+      "answer": "De houdbaarheidsdatum geeft aan tot wanneer het bier naar verwachting de optimale kwaliteit heeft. De verpakkingsdatum of botteldatum geeft aan wanneer het is verpakt. Voor hop-rijke bieren zoals IPA's is de verpakkingsdatum vaak nuttiger om de versheid te beoordelen."
+    },
+    {
+      "question": "Is EBCU onafhankelijk?",
+      "answer": "Ja. EBCU is een federatie van onafhankelijke consumentenorganisaties in heel Europa. Eventuele externe financiering voor Know Your Beer wordt openbaar gemaakt, en financiering verleent geen redactionele controle. De redactionele verantwoordelijkheid blijft bij EBCU."
+    },
+    {
+      "question": "Kunnen brouwerijen of merken samenwerken met Know Your Beer?",
+      "answer": "We staan open voor samenwerkingen met consumentenorganisaties, brouwerijverenigingen en netwerken van onafhankelijke brouwers die onze toewijding aan transparantie delen. We accepteren geen samenwerkingen die de redactionele onafhankelijkheid in gevaar zouden brengen."
+    },
+    {
+      "question": "Komt Know Your Beer beschikbaar in mijn taal?",
+      "answer": "We zijn van plan om inhoud in meerdere Europese talen aan te bieden. De eerste lancering is in het Engels, met vertalingen die volgen op basis van de interesse van partners en beschikbare middelen."
+    },
+    {
+      "question": "Waarom hebben sommige bieren QR-codes op het etiket?",
+      "answer": "QR-codes stellen brouwers in staat gedetailleerde informatie (ingrediënten, voedingswaarden, allergenen, proefnotities) te verstrekken zonder het fysieke etiket te overladen. Dit is al verplicht voor wijn. Veel brouwers nemen dit vrijwillig over. Controleer bij het scannen van een QR-code of deze naar de officiële website van de brouwer leidt en niet naar een derde partij."
+    },
+    {
+      "question": "Wat is de EU Consumer Agenda 2030?",
+      "answer": "De EU Consumer Agenda 2030 is het vijfjarig strategisch kader van de Europese Commissie voor consumentenbeleid, vastgesteld in november 2025. Het richt zich op het voltooien van de interne markt, digitale rechtvaardigheid, duurzame consumptie en sterkere handhaving. Hoewel het niet specifiek wijzigingen in bieretikettering voorschrijft, ondersteunt het consumentenemancipatie en transparantie in alle sectoren. Know Your Beer sluit aan bij deze doelstellingen door consumenten te helpen weloverwogen keuzes te maken."
+    },
+    {
+      "question": "Wat zijn mijn rechten wanneer ik informatie over bier vraag in een bar of restaurant?",
+      "answer": "Op grond van de EU-voedselwetgeving moet het personeel op verzoek allergeninformatie kunnen verstrekken voor elk product. Zie de sectie over bars en restaurants op deze site voor een volledig overzicht van wat je kunt vragen en waar je op moet letten in een horecazaak."
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 import { EleventyI18nPlugin } from "@11ty/eleventy";
 
 export default function(eleventyConfig) {
+  // Disable deep merge so directory data files replace (not concatenate) global arrays
+  eleventyConfig.setDataDeepMerge(false);
+
   // Internationalisation
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: "en",

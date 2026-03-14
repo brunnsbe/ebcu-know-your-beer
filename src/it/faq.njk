@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: FAQ
+contentVersion: "2026-02-24"
+translatedFrom: "2026-02-24"
+---
+
+{# Page header #}
+<div class="bg-ebcu-blue pt-24 pb-12">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <h1 class="text-3xl sm:text-4xl font-bold text-white">Domande frequenti</h1>
+    <p class="mt-4 text-lg text-white/90 max-w-2xl">
+      Domande comuni su Know Your Beer, l'etichettatura della birra e i diritti dei consumatori.
+    </p>
+  </div>
+</div>
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
+  <div class="my-8">
+    <img src="/assets/images/couple.jpg" alt="Coppia che discute le scelte di birra" class="w-full rounded-lg border border-gray-200 shadow-sm">
+    <p class="text-sm text-gray-600 mt-2 italic">
+      Capire le etichette della birra ti aiuta a fare scelte consapevoli e a godere di conversazioni migliori su ciò che stai bevendo.
+    </p>
+  </div>
+
+  <div class="space-y-4">
+    {% for item in faqs %}
+    <details class="group rounded-xl border border-gray-200 overflow-hidden">
+      <summary class="flex items-center justify-between cursor-pointer p-5 bg-white hover:bg-gray-50 transition-colors">
+        <span class="font-medium text-gray-900 text-left pr-4">{{ item.question }}</span>
+        <span class="flex-shrink-0 text-gray-400 group-open:rotate-180 transition-transform">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </span>
+      </summary>
+      <div class="px-5 pb-5 text-gray-600">
+        <p>{{ item.answer }}</p>
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+
+  <div class="border-t border-gray-200 pt-12 mt-12">
+    <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
+      <h2 class="font-semibold text-gray-900 text-lg mb-2">Hai una domanda a cui non si risponde qui?</h2>
+      <p class="text-gray-600 mb-4">
+        Stiamo costruendo questa risorsa basandoci su domande reali dei consumatori. Se c'è qualcosa che vorresti sapere sull'etichettatura della birra o sui tuoi diritti come consumatore, faccelo sapere.
+      </p>
+      <a href="/it/about/" class="inline-flex items-center text-ebcu-gold font-medium hover:text-ebcu-gold-dark">
+        Contattaci
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </div>
+</div>

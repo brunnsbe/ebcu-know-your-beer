@@ -1,0 +1,93 @@
+{
+  "lang": "it",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Contenuto alcolico, porzione e stile della birra",
+      "shortTitle": "Alcol e Stile",
+      "lead": "ABV, unità alcoliche e cosa gli stili di birra dicono sulle aspettative di gusto.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Ingredienti e allergeni",
+      "shortTitle": "Ingredienti e Allergeni",
+      "lead": "Cosa c'è davvero nella tua birra, dagli ingredienti di base agli additivi e alle informazioni sugli allergeni.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Produttore e origine",
+      "shortTitle": "Produttore e Origine",
+      "lead": "Chi ha davvero prodotto la tua birra e dove — frasi del produttore, birrificazione per conto terzi e come trovare il luogo di produzione effettivo.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Marchi, loghi e certificazioni",
+      "shortTitle": "Marchi e Loghi",
+      "lead": "Marchi di qualità UE (IGP, DOP, STG), certificazioni Trappista e Birra d'Abbazia belga, loghi dei birrifici indipendenti e premi di concorso.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Freschezza, date e tracciabilità",
+      "shortTitle": "Freschezza e Date",
+      "lead": "Data di imbottigliamento vs data di scadenza, codici lotto e come invecchiano i diversi stili.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Conservazione, deposito e birre vive",
+      "shortTitle": "Conservazione e Servizio",
+      "lead": "Condizioni di conservazione ottimali, comprensione del deposito e servizio di birre rifermentate in bottiglia e birre alla spina.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Cos'è Know Your Beer?",
+      "answer": "Know Your Beer è una campagna di educazione dei consumatori a livello europeo dell'EBCU (European Beer Consumers Union). Aiuta i consumatori a capire le etichette delle birre, a fare scelte consapevoli e a sapere quali domande porre quando acquistano birra. La campagna supporta gli obiettivi più ampi dell'UE in materia di tutela dei consumatori nell'ambito dell'Agenda Consumatori 2030."
+    },
+    {
+      "question": "L'etichettatura degli ingredienti è obbligatoria sulla birra?",
+      "answer": "Non ancora a livello UE. A differenza del vino, la birra è ancora esente dall'obbligo di etichettatura degli ingredienti e dei valori nutrizionali ai sensi della normativa alimentare dell'UE. Tuttavia, il settore birrario ha firmato un memorandum d'intesa con la Commissione europea nel 2019, impegnandosi volontariamente a fornire queste informazioni. Entro il 2022, il 95% dei volumi di birra in bottiglie e lattine nell'UE includeva un elenco degli ingredienti. L'Irlanda dovrebbe diventare il primo paese dell'UE a rendere obbligatoria un'etichettatura completa dell'alcol, ora prevista per settembre 2028."
+    },
+    {
+      "question": "Cosa significa «prodotta per» su un'etichetta?",
+      "answer": "«Prodotta per» significa generalmente che la birra è stata prodotta in conto terzi presso un birrificio diverso da quello del proprietario del marchio. Il proprietario del marchio progetta la ricetta e possiede il marchio, ma un altro birrificio la produce. Si tratta di una pratica comune e legale."
+    },
+    {
+      "question": "Come posso scoprire dove è stata effettivamente prodotta una birra?",
+      "answer": "Cerca frasi come «prodotta da», «prodotta a» o un indirizzo del birrificio. Se dice «prodotta per» o «distribuita da», il luogo di produzione effettivo può essere diverso. Alcune birre contengono codici lotto che indicano l'impianto di produzione."
+    },
+    {
+      "question": "Qual è la differenza tra «data di scadenza» e «data di imbottigliamento»?",
+      "answer": "La data di scadenza indica fino a quando si prevede che la birra sia alla sua qualità ottimale. La data di imbottigliamento indica quando è stata confezionata. Per le birre ricche di luppolo come le IPA, la data di imbottigliamento è spesso più utile per valutare la freschezza."
+    },
+    {
+      "question": "EBCU è indipendente?",
+      "answer": "Sì. EBCU è una federazione di organizzazioni indipendenti di consumatori in tutta Europa. Qualsiasi finanziamento esterno per Know Your Beer viene divulgato pubblicamente e il finanziamento non conferisce controllo editoriale. La responsabilità editoriale rimane con EBCU."
+    },
+    {
+      "question": "I birrifici o i marchi possono collaborare con Know Your Beer?",
+      "answer": "Siamo aperti a collaborazioni con organizzazioni di consumatori, associazioni birrarie e reti di birrifici indipendenti che condividono il nostro impegno per la trasparenza. Non accettiamo collaborazioni che comprometterebbero l'indipendenza editoriale."
+    },
+    {
+      "question": "Know Your Beer sarà disponibile nella mia lingua?",
+      "answer": "Prevediamo di offrire contenuti in più lingue europee. Il lancio iniziale sarà in inglese, con traduzioni che seguiranno in base all'interesse dei partner e alle risorse disponibili."
+    },
+    {
+      "question": "Perché alcune birre hanno QR code sull'etichetta?",
+      "answer": "I QR code permettono ai birrifici di fornire informazioni dettagliate (ingredienti, valori nutrizionali, allergeni, note di degustazione) senza sovraffollare l'etichetta fisica. Ciò è già obbligatorio per il vino. Molti birrifici adottano questo approccio volontariamente. Quando si scansiona un QR code, assicurarsi che rimandi al sito ufficiale del birrificio e non a una pagina di terze parti."
+    },
+    {
+      "question": "Cos'è l'Agenda Consumatori 2030 dell'UE?",
+      "answer": "L'Agenda Consumatori 2030 dell'UE è il quadro strategico quinquennale della Commissione europea per la politica dei consumatori, adottato nel novembre 2025. Si concentra sul completamento del mercato unico, l'equità digitale, il consumo sostenibile e un rafforzamento dell'applicazione. Sebbene non prescriva specificamente cambiamenti nell'etichettatura della birra, supporta l'empowerment e la trasparenza dei consumatori in tutti i settori. Know Your Beer si allinea a questi obiettivi aiutando i consumatori a fare scelte consapevoli."
+    },
+    {
+      "question": "Quali sono i miei diritti quando chiedo informazioni sulla birra in un bar o ristorante?",
+      "answer": "In base alla normativa alimentare dell'UE, il personale deve essere in grado di fornire informazioni sugli allergeni per qualsiasi prodotto su richiesta. Per una panoramica completa di cosa puoi chiedere e cosa cercare in un locale, consulta la sezione bar e ristoranti di questo sito."
+    }
+  ]
+}

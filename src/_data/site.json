@@ -5,7 +5,7 @@
   "description": "A Europe-wide consumer education campaign by EBCU explaining what beer label information means, what to look for, and how to use it.",
   "launchWindow": "Late April / early May 2026",
   "contactEmail": "know-your-beer@ebcu.org",
-  "languages": ["en", "de", "fr", "nl"],
+  "languages": ["en", "de", "fr", "it", "es", "pl", "nl"],
   "defaultLanguage": "en",
   "isDraft": true
 }

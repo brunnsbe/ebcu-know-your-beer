@@ -1,0 +1,93 @@
+{
+  "lang": "fr",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Teneur en alcool, portion & style de bière",
+      "shortTitle": "Alcool & Style",
+      "lead": "ABV, unités d'alcool et ce que les styles de bière révèlent sur les attentes gustatives.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Ingrédients & allergènes",
+      "shortTitle": "Ingrédients & Allergènes",
+      "lead": "Ce qu'il y a vraiment dans votre bière, des ingrédients de base aux additifs et informations sur les allergènes.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Producteur & origine",
+      "shortTitle": "Producteur & Origine",
+      "lead": "Qui a vraiment fabriqué votre bière et où — mentions du producteur, brassage à façon et comment trouver le lieu de brassage réel.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Marques, logos & certifications",
+      "shortTitle": "Marques & Logos",
+      "lead": "Indications géographiques UE (IGP, AOP, STG), certifications Trappiste et Bière d'Abbaye belge, logos des brasseurs indépendants et récompenses de compétition.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Fraîcheur, dates & traçabilité",
+      "shortTitle": "Fraîcheur & Dates",
+      "lead": "Date de mise en bouteille vs date limite de consommation, codes de lot et comment vieillissent les différents styles.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Conservation, dépôt & bières vivantes",
+      "shortTitle": "Conservation & Service",
+      "lead": "Conditions de stockage optimales, comprendre les dépôts et servir les bières refermentées en bouteille et les bières pression.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qu'est-ce que Know Your Beer ?",
+      "answer": "Know Your Beer est une campagne d'éducation des consommateurs à l'échelle européenne, menée par l'EBCU (European Beer Consumers Union). Elle aide les consommateurs à comprendre les étiquettes de bière, à faire des choix éclairés et à savoir quelles questions poser lors de l'achat de bière. La campagne soutient les objectifs plus larges de l'UE en matière d'autonomisation des consommateurs dans le cadre de l'Agenda Consommateurs 2030."
+    },
+    {
+      "question": "L'étiquetage des ingrédients est-il obligatoire sur la bière ?",
+      "answer": "Pas encore au niveau de l'UE. Contrairement au vin, la bière reste exemptée de l'obligation d'étiquetage des ingrédients et des valeurs nutritionnelles en vertu du droit alimentaire de l'UE. Cependant, le secteur brassicole a signé un mémorandum d'accord avec la Commission européenne en 2019, s'engageant volontairement à fournir ces informations. En 2022, 95 % des volumes de bière en bouteilles et en canettes dans l'UE incluaient une liste d'ingrédients. L'Irlande devrait devenir le premier pays de l'UE à rendre obligatoire un étiquetage complet de l'alcool, désormais prévu en septembre 2028."
+    },
+    {
+      "question": "Que signifie « brassé pour » sur une étiquette ?",
+      "answer": "« Brassé pour » signifie généralement que la bière a été brassée en sous-traitance dans une brasserie différente de celle du propriétaire de la marque. Le propriétaire de la marque conçoit la recette et possède la marque, mais une autre brasserie assure la production. Il s'agit d'une pratique courante et légale."
+    },
+    {
+      "question": "Comment puis-je savoir où une bière a réellement été brassée ?",
+      "answer": "Recherchez des mentions comme « brassé par », « brassé à » ou une adresse de brasserie. Si l'étiquette indique « brassé pour » ou « distribué par », le lieu de brassage réel peut être différent. Certaines bières contiennent des codes de lot qui indiquent l'établissement de production."
+    },
+    {
+      "question": "Quelle est la différence entre la « date limite de consommation » et la « date de mise en bouteille » ?",
+      "answer": "La date limite de consommation indique jusqu'à quand la bière est supposée être à son niveau de qualité optimal. La date de mise en bouteille ou d'embouteillage indique quand elle a été conditionnée. Pour les bières houblonnées comme les IPA, la date de mise en bouteille est souvent plus utile pour juger de la fraîcheur."
+    },
+    {
+      "question": "L'EBCU est-elle indépendante ?",
+      "answer": "Oui. L'EBCU est une fédération d'organisations indépendantes de consommateurs à travers l'Europe. Tout financement externe pour Know Your Beer est divulgué publiquement, et le financement n'accorde pas de contrôle éditorial. La responsabilité éditoriale reste avec l'EBCU."
+    },
+    {
+      "question": "Les brasseries ou les marques peuvent-elles s'associer à Know Your Beer ?",
+      "answer": "Nous accueillons favorablement les partenariats avec des organisations de consommateurs, des associations brassicoles et des réseaux de brasseurs indépendants qui partagent notre engagement envers la transparence. Nous n'acceptons pas les partenariats qui compromettraient l'indépendance éditoriale."
+    },
+    {
+      "question": "Know Your Beer sera-t-il disponible dans ma langue ?",
+      "answer": "Nous prévoyons d'offrir du contenu en plusieurs langues européennes. Le lancement initial se fera en anglais, avec des traductions suivant en fonction de l'intérêt des partenaires et des ressources disponibles."
+    },
+    {
+      "question": "Pourquoi certaines bières ont-elles des QR codes sur l'étiquette ?",
+      "answer": "Les QR codes permettent aux brasseurs de fournir des informations détaillées (ingrédients, valeurs nutritionnelles, allergènes, notes de dégustation) sans encombrer l'étiquette physique. Cela est déjà obligatoire pour le vin. De nombreux brasseurs adoptent cette approche volontairement. Lorsque vous scannez un QR code, assurez-vous qu'il renvoie vers le site officiel du brasseur et non vers une page tierce."
+    },
+    {
+      "question": "Qu'est-ce que l'Agenda Consommateurs 2030 de l'UE ?",
+      "answer": "L'Agenda Consommateurs 2030 de l'UE est le cadre stratégique quinquennal de la Commission européenne pour la politique des consommateurs, adopté en novembre 2025. Il se concentre sur l'achèvement du marché unique, l'équité numérique, la consommation durable et un renforcement de l'application. Bien qu'il ne mandate pas spécifiquement des changements en matière d'étiquetage de la bière, il soutient l'autonomisation et la transparence des consommateurs dans tous les secteurs. Know Your Beer s'aligne sur ces objectifs en aidant les consommateurs à faire des choix éclairés."
+    },
+    {
+      "question": "Quels sont mes droits lorsque je me renseigne sur une bière dans un bar ou un restaurant ?",
+      "answer": "En vertu du droit alimentaire de l'UE, le personnel doit être en mesure de fournir des informations sur les allergènes pour tout produit sur demande. Pour un aperçu complet de ce que vous pouvez demander et de ce qu'il faut rechercher dans un établissement, consultez la section cafés & restaurants de ce site."
+    }
+  ]
+}

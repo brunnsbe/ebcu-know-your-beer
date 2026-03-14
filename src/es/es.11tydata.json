@@ -1,0 +1,93 @@
+{
+  "lang": "es",
+  "topics": [
+    {
+      "slug": "alcohol-style",
+      "title": "Contenido alcohólico, porción y estilo de cerveza",
+      "shortTitle": "Alcohol y Estilo",
+      "lead": "ABV, unidades de alcohol y lo que los estilos de cerveza dicen sobre las expectativas de sabor.",
+      "icon": "percent"
+    },
+    {
+      "slug": "ingredients-allergens",
+      "title": "Ingredientes y alérgenos",
+      "shortTitle": "Ingredientes y Alérgenos",
+      "lead": "Qué hay realmente en tu cerveza, desde los ingredientes básicos hasta los aditivos y la información sobre alérgenos.",
+      "icon": "grain"
+    },
+    {
+      "slug": "producer-origin",
+      "title": "Productor y origen",
+      "shortTitle": "Productor y Origen",
+      "lead": "Quién elaboró realmente tu cerveza y dónde — frases del productor, elaboración por encargo y cómo encontrar el lugar de producción real.",
+      "icon": "users"
+    },
+    {
+      "slug": "marks-logos-certifications",
+      "title": "Marcas, logos y certificaciones",
+      "shortTitle": "Marcas y Logos",
+      "lead": "Indicaciones geográficas de la UE (IGP, DOP, ETG), certificaciones Trapense y Cerveza de Abadía belga, logos de cerveceros independientes y premios de competición.",
+      "icon": "badge"
+    },
+    {
+      "slug": "freshness-dates",
+      "title": "Frescura, fechas y trazabilidad",
+      "shortTitle": "Frescura y Fechas",
+      "lead": "Fecha de envasado vs fecha de consumo preferente, códigos de lote y cómo envejecen los distintos estilos.",
+      "icon": "calendar"
+    },
+    {
+      "slug": "storage-serving",
+      "title": "Almacenamiento, sedimento y cervezas vivas",
+      "shortTitle": "Almacenamiento y Servicio",
+      "lead": "Condiciones óptimas de almacenamiento, comprensión del sedimento y servicio de cervezas refermentadas en botella y de barril.",
+      "icon": "storage"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "¿Qué es Know Your Beer?",
+      "answer": "Know Your Beer es una campaña de educación al consumidor de toda Europa impulsada por la EBCU (European Beer Consumers Union). Ayuda a los consumidores a entender las etiquetas de la cerveza, a tomar decisiones informadas y a saber qué preguntas hacer al comprar cerveza. La campaña apoya los objetivos más amplios de la UE de empoderamiento del consumidor en el marco de la Agenda del Consumidor 2030."
+    },
+    {
+      "question": "¿Es obligatorio el etiquetado de ingredientes en la cerveza?",
+      "answer": "Todavía no a nivel de la UE. A diferencia del vino, la cerveza sigue exenta de la obligación de etiquetado de ingredientes y valores nutricionales según la legislación alimentaria de la UE. Sin embargo, el sector cervecero firmó un Memorando de Entendimiento con la Comisión Europea en 2019, comprometiéndose voluntariamente a proporcionar esta información. En 2022, el 95% del volumen de cerveza en botellas y latas en la UE incluía una lista de ingredientes. Irlanda está previsto que sea el primer país de la UE en exigir un etiquetado completo del alcohol, ahora esperado para septiembre de 2028."
+    },
+    {
+      "question": "¿Qué significa «elaborada para» en una etiqueta?",
+      "answer": "«Elaborada para» generalmente significa que la cerveza fue fabricada por contrato en una cervecería diferente a la del propietario de la marca. El propietario de la marca diseña la receta y posee la marca, pero otra cervecería la produce. Es una práctica común y legal."
+    },
+    {
+      "question": "¿Cómo puedo saber dónde se elaboró realmente una cerveza?",
+      "answer": "Busca frases como «elaborada por», «elaborada en» o una dirección de cervecería. Si dice «elaborada para» o «distribuida por», el lugar de producción real puede ser diferente. Algunas cervezas contienen códigos de lote que indican la instalación de producción."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre «fecha de consumo preferente» y «fecha de envasado»?",
+      "answer": "La fecha de consumo preferente indica hasta cuándo se espera que la cerveza esté en su calidad óptima. La fecha de envasado o embotellado indica cuándo fue envasada. Para las cervezas con mucho lúpulo como las IPA, la fecha de envasado suele ser más útil para juzgar la frescura."
+    },
+    {
+      "question": "¿Es la EBCU independiente?",
+      "answer": "Sí. La EBCU es una federación de organizaciones de consumidores independientes de toda Europa. Cualquier financiación externa para Know Your Beer se divulga públicamente, y la financiación no otorga control editorial. La responsabilidad editorial recae en la EBCU."
+    },
+    {
+      "question": "¿Pueden las cervecerías o marcas asociarse con Know Your Beer?",
+      "answer": "Damos la bienvenida a asociaciones con organizaciones de consumidores, asociaciones cerveceras y redes de cerveceros independientes que compartan nuestro compromiso con la transparencia. No aceptamos asociaciones que comprometan la independencia editorial."
+    },
+    {
+      "question": "¿Estará Know Your Beer disponible en mi idioma?",
+      "answer": "Planeamos ofrecer contenido en varios idiomas europeos. El lanzamiento inicial será en inglés, con traducciones que seguirán según el interés de los socios y los recursos disponibles."
+    },
+    {
+      "question": "¿Por qué algunas cervezas tienen códigos QR en la etiqueta?",
+      "answer": "Los códigos QR permiten a los cerveceros proporcionar información detallada (ingredientes, valores nutricionales, alérgenos, notas de cata) sin saturar la etiqueta física. Esto ya es obligatorio para el vino. Muchos cerveceros adoptan este enfoque voluntariamente. Cuando escanees un código QR, asegúrate de que enlace al sitio oficial del cervecero y no a una página de terceros."
+    },
+    {
+      "question": "¿Qué es la Agenda del Consumidor 2030 de la UE?",
+      "answer": "La Agenda del Consumidor 2030 de la UE es el marco estratégico quinquenal de la Comisión Europea para la política de consumidores, adoptado en noviembre de 2025. Se centra en completar el mercado único, la equidad digital, el consumo sostenible y un cumplimiento más estricto. Aunque no exige específicamente cambios en el etiquetado de la cerveza, apoya el empoderamiento y la transparencia del consumidor en todos los sectores. Know Your Beer se alinea con estos objetivos ayudando a los consumidores a tomar decisiones informadas."
+    },
+    {
+      "question": "¿Cuáles son mis derechos cuando pregunto sobre la cerveza en un bar o restaurante?",
+      "answer": "Según la legislación alimentaria de la UE, el personal debe poder proporcionar información sobre alérgenos de cualquier producto a petición. Para una visión completa de lo que puedes preguntar y qué buscar en un local, consulta la sección de bares y restaurantes de este sitio."
+    }
+  ]
+}
