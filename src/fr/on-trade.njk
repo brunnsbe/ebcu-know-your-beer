@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Bars et restaurants
 contentVersion: "2026-02-24"
-translatedFrom: "2026-02-24"
+translatedFrom: "2026-03-15"
 ---
 
 {# Page header #}
@@ -34,7 +34,7 @@ translatedFrom: "2026-02-24"
     <p class="font-semibold text-gray-900 mb-3">Sur cette page</p>
     <ul class="space-y-2">
       <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Questions que vous pouvez poser</a></li>
-      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Fût conditionné vs fût pressurisé : ce que vous commandez vraiment</a></li>
+      <li><a href="#draught-beer" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Bière pression : ce que vous commandez vraiment</a></li>
       <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Ce qu'il faut rechercher</a></li>
     </ul>
   </nav>
@@ -90,37 +90,50 @@ translatedFrom: "2026-02-24"
       </div>
     </section>
 
-    <section id="cask-vs-keg">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Fût conditionné vs fût pressurisé : ce que vous commandez vraiment</h2>
+    <section id="draught-beer">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Bière pression : ce que vous commandez vraiment</h2>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Bière en fût pressurisé (keg)</h3>
       <p class="text-gray-600 mb-6">
-        « Bière pression » recouvre des produits très différents. Qu'une bière soit conditionnée en fût naturel ou en fût pressurisé
-        influe considérablement sur son goût, son service et la façon dont elle doit être appréciée.
+        Presque toute la bière pression en Europe est en fût pressurisé. La bière fermente entièrement avant
+        le conditionnement, puis est scellée dans un fût — métallique ou plastique — et servie sous pression
+        de CO₂, d'azote ou d'un mélange des deux au bar. Le résultat est constant et prévisible : la même
+        gazéification et la même saveur du premier au dernier verre, généralement avec une durée de conservation
+        d'une à deux semaines une fois mis en perce.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 mb-6">
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Fût conditionné (real ale)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Non filtrée et non pasteurisée — bière vivante</li>
-            <li>Servie à la pompe à main ou par gravité, sans gaz externe</li>
-            <li>Naturellement gazéifiée par la levure résiduelle dans le fût</li>
-            <li>Servie à température de cave (11–13 °C)</li>
-            <li>Gazéification plus douce et plus faible que le fût pressurisé</li>
-            <li>À consommer dans les 3 à 5 jours suivant la mise en perce</li>
-          </ul>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Fût pressurisé (keg)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Généralement filtrée et/ou pasteurisée</li>
-            <li>Servie sous pression de CO₂ ou d'azote</li>
-            <li>Gazéification constante tout au long de la vie du fût</li>
-            <li>Servie froide (4–8 °C pour la plupart des styles)</li>
-            <li>Durée de conservation plus longue une fois mis en perce (1 à 2 semaines)</li>
-            <li>Comprend la plupart des lagers et de nombreuses bières artisanales</li>
-          </ul>
-        </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-10">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Signes d'un fût pressurisé bien entretenu</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Servi à la bonne température pour le style</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Arôme frais et net — des notes musties ou acides indiquent souvent des lignes encrassées</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Gazéification appropriée — ni plate ni trop pétillante</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Une mousse persistante pour les styles qui doivent en avoir</span>
+          </li>
+        </ul>
       </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Bière en fût conditionné (real ale)</h3>
+      <p class="text-gray-600 mb-6">
+        Au Royaume-Uni, et dans quelques bars à bière spécialisés ailleurs en Europe, vous pouvez aussi
+        rencontrer la bière en fût conditionné — également connue sous le nom de real ale. Contrairement
+        au keg, la bière est mise en fût avant que la fermentation soit entièrement achevée et continue
+        à mûrir au bar, servie à la pompe à main ou par gravité sans gaz externe. Le résultat est une
+        bière vivante, non filtrée, servie à température de cave (11–13 °C) avec une gazéification
+        naturelle douce. Comme elle est encore vivante, elle évolue de jour en jour et se consomme
+        idéalement dans les 3 à 5 jours suivant la mise en perce.
+      </p>
 
       <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
         <h3 class="font-semibold text-gray-900 text-lg mb-4">Signes d'un fût conditionné bien entretenu</h3>
@@ -139,18 +152,16 @@ translatedFrom: "2026-02-24"
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Arôme frais et net — pas de vinaigre, pas de notes plates ou de moisi</span>
+            <span class="text-gray-600">Arôme frais et net — pas de vinaigre, pas de notes acides ou de moisi</span>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5">
-        <p class="font-medium text-gray-700">Pourquoi cela compte lors de la commande</p>
+        <p class="font-medium text-gray-700">Se renseigner sur le fût conditionné</p>
         <p class="text-sm text-gray-700 mt-1">
-          Le fût conditionné est un produit vivant qui évolue de jour en jour. Un fût bien entretenu au bon moment de
-          sa vie peut être exceptionnel, mais un fût vieux ou mal géré aura un goût plat ou oxydé.
-          Si vous commandez un fût conditionné, il est tout à fait raisonnable de demander quand le fût a été mis en perce —
-          les bons établissements le sauront et ne verront pas d'inconvénient à vous le dire.
+          Si vous commandez un fût conditionné, il est tout à fait raisonnable de demander quand le fût a
+          été mis en perce — les bons établissements le sauront et ne verront pas d'inconvénient à vous le dire.
         </p>
       </div>
     </section>

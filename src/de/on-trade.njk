@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Bars und Restaurants
 contentVersion: "2026-02-24"
-translatedFrom: "2026-02-24"
+translatedFrom: "2026-03-15"
 ---
 
 {# Page header #}
@@ -34,7 +34,7 @@ translatedFrom: "2026-02-24"
     <p class="font-semibold text-gray-900 mb-3">Auf dieser Seite</p>
     <ul class="space-y-2">
       <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Fragen, die Sie stellen können</a></li>
-      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Fass vs. Keg: Was Sie tatsächlich bestellen</a></li>
+      <li><a href="#draught-beer" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Fassbier: Was Sie tatsächlich bestellen</a></li>
       <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Worauf zu achten ist</a></li>
     </ul>
   </nav>
@@ -90,44 +90,57 @@ translatedFrom: "2026-02-24"
       </div>
     </section>
 
-    <section id="cask-vs-keg">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Fass vs. Keg: Was Sie tatsächlich bestellen</h2>
+    <section id="draught-beer">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Fassbier: Was Sie tatsächlich bestellen</h2>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Keg-Bier</h3>
       <p class="text-gray-600 mb-6">
-        „Fassbier" umfasst sehr unterschiedliche Produkte. Ob ein Bier fass- oder keg-gereift ist,
-        beeinflusst wesentlich, wie es schmeckt, wie es serviert wird und wie es beurteilt werden sollte.
+        Fast alles Fassbier in Europa ist Keg-Bier. Das Bier wird vollständig vergoren, bevor es abgefüllt wird,
+        dann in einem Keg — aus Metall oder Kunststoff — versiegelt und an der Bar unter CO₂-, Stickstoff- oder
+        Mischdruck ausgeschenkt. Das Ergebnis ist konsistent und vorhersehbar: dieselbe Karbonisierung und
+        dasselbe Aroma vom ersten bis zum letzten Ausschank, in der Regel mit einer Haltbarkeit von ein bis
+        zwei Wochen nach dem Anstechen.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 mb-6">
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Fass (Real Ale)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Ungefiltert und unpasteurisiert – lebendiges Bier</li>
-            <li>Serviert per Handpumpe oder Schwerkraft, kein externes Gas</li>
-            <li>Natürlich karbonisiert durch Resthefen im Fass</li>
-            <li>Serviert bei Kellertemperatur (11–13°C)</li>
-            <li>Weicher, geringere Karbonisierung als Keg</li>
-            <li>Am besten innerhalb von 3–5 Tagen nach dem Anstechen getrunken</li>
-          </ul>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Keg</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Typischerweise gefiltert und/oder pasteurisiert</li>
-            <li>Serviert unter CO₂- oder Stickstoffdruck</li>
-            <li>Gleichmäßige Karbonisierung über die gesamte Lebensdauer des Kegs</li>
-            <li>Kalt serviert (4–8°C für die meisten Stile)</li>
-            <li>Längere Haltbarkeit nach dem Anstechen (1–2 Wochen)</li>
-            <li>Umfasst die meisten Lagerbiere und viele Craft Beers</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
-        <h3 class="font-semibold text-gray-900 text-lg mb-4">Zeichen eines gut gepflegten Fasses</h3>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-10">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Zeichen eines gut gepflegten Kegs</h3>
         <ul class="space-y-3">
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Lebendig, aber nicht übermäßig sprudelnd – sanfte natürliche Karbonisierung mit einem feinen Schaum</span>
+            <span class="text-gray-600">Bei der richtigen Temperatur für den Stil serviert</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Sauberes, frisches Aroma — muffige oder saure Noten deuten oft auf schmutzige Leitungen hin</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Angemessene Karbonisierung — weder flach noch übermäßig sprudelnd</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Anhaltender Schaum bei Stilen, die ihn haben sollten</span>
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Cask-Bier (Real Ale)</h3>
+      <p class="text-gray-600 mb-6">
+        In Großbritannien und in einigen spezialisierten Bierlokalen andernorts in Europa begegnen Sie
+        möglicherweise auch Cask-Bier — auch bekannt als Real Ale. Anders als beim Keg wird das Bier in
+        das Fass gefüllt, bevor die Gärung vollständig abgeschlossen ist, und reift weiter in der Gaststätte,
+        serviert per Handpumpe oder Schwerkraft ohne externes Gas. Das Ergebnis ist ein lebendiges,
+        ungefiltertes Bier bei Kellertemperatur (11–13°C) mit weicher, natürlicher Karbonisierung. Da es
+        noch lebt, verändert es sich von Tag zu Tag und sollte am besten innerhalb von 3–5 Tagen nach
+        dem Anstechen getrunken werden.
+      </p>
+
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Zeichen eines gut gepflegten Cask-Biers</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Lebendig, aber nicht übermäßig sprudelnd — sanfte natürliche Karbonisierung mit einem feinen Schaum</span>
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
@@ -139,18 +152,16 @@ translatedFrom: "2026-02-24"
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Frisches, sauberes Aroma – kein Essig, keine abgestandenen oder muffigen Noten</span>
+            <span class="text-gray-600">Frisches, sauberes Aroma — kein Essig, keine sauren oder muffigen Noten</span>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5">
-        <p class="font-medium text-gray-700">Warum es beim Bestellen wichtig ist</p>
+        <p class="font-medium text-gray-700">Cask-Bier nachfragen</p>
         <p class="text-sm text-gray-700 mt-1">
-          Fassbier ist ein lebendiges Produkt, das sich von Tag zu Tag verändert. Ein gut gepflegtes Fass zum richtigen
-          Zeitpunkt kann außergewöhnlich sein, aber ein altes oder schlecht verwaltetes Fass schmeckt flach oder oxidiert.
-          Wenn Sie Fassbier bestellen, ist es durchaus berechtigt zu fragen, wann das Fass angestochen wurde – gute
-          Pubs wissen das und haben nichts dagegen, es Ihnen zu sagen.
+          Wenn Sie Cask-Bier bestellen, ist es durchaus berechtigt zu fragen, wann das Fass angestochen wurde —
+          gute Pubs wissen das und haben nichts dagegen, es Ihnen zu sagen.
         </p>
       </div>
     </section>

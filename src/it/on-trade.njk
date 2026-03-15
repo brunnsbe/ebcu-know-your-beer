@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Bar e ristoranti
 contentVersion: "2026-02-24"
-translatedFrom: "2026-02-24"
+translatedFrom: "2026-03-15"
 ---
 
 {# Page header #}
@@ -34,7 +34,7 @@ translatedFrom: "2026-02-24"
     <p class="font-semibold text-gray-900 mb-3">In questa pagina</p>
     <ul class="space-y-2">
       <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Domande che puoi fare</a></li>
-      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Fusto tradizionale vs keg: cosa stai ordinando</a></li>
+      <li><a href="#draught-beer" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Birra alla spina: cosa stai ordinando davvero</a></li>
       <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Cosa cercare</a></li>
     </ul>
   </nav>
@@ -90,37 +90,49 @@ translatedFrom: "2026-02-24"
       </div>
     </section>
 
-    <section id="cask-vs-keg">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Fusto tradizionale vs keg: cosa stai ordinando</h2>
+    <section id="draught-beer">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Birra alla spina: cosa stai ordinando davvero</h2>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Birra in keg</h3>
       <p class="text-gray-600 mb-6">
-        La "birra alla spina" comprende prodotti molto diversi. Che una birra sia condizionata in fusto tradizionale o in keg
-        influisce significativamente su come sa, come viene servita e come dovrebbe essere giudicata.
+        Quasi tutta la birra alla spina in Europa è birra in keg. La birra fermenta completamente prima del
+        confezionamento, poi viene sigillata in un keg — metallico o in plastica — e servita sotto pressione
+        di CO₂, azoto o una miscela di entrambi al bar. Il risultato è costante e prevedibile: la stessa
+        carbonazione e lo stesso sapore dal primo all'ultimo bicchiere, di solito con una durata di
+        uno-due settimane dopo l'apertura.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 mb-6">
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Fusto tradizionale (real ale)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Non filtrata e non pastorizzata — birra viva</li>
-            <li>Servita con pompa a mano o per gravità, senza gas esterno</li>
-            <li>Naturalmente carbonata dal lievito residuo nel fusto</li>
-            <li>Servita a temperatura di cantina (11–13°C)</li>
-            <li>Carbonazione più morbida e ridotta rispetto al keg</li>
-            <li>Idealmente consumata entro 3–5 giorni dall'apertura</li>
-          </ul>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Keg</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Tipicamente filtrata e/o pastorizzata</li>
-            <li>Servita sotto pressione di CO₂ o azoto</li>
-            <li>Carbonazione costante per tutta la vita del keg</li>
-            <li>Servita fredda (4–8°C per la maggior parte degli stili)</li>
-            <li>Maggiore durata una volta spillata (1–2 settimane)</li>
-            <li>Include la maggior parte dei lager e molte birre artigianali</li>
-          </ul>
-        </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-10">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Segni di un keg ben conservato</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Servita alla giusta temperatura per lo stile</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Aroma fresco e pulito — note muschiose o acide indicano spesso tubazioni sporche</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Carbonazione appropriata — né piatta né troppo frizzante</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Una schiuma persistente per gli stili che dovrebbero averla</span>
+          </li>
+        </ul>
       </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Birra in fusto tradizionale (real ale)</h3>
+      <p class="text-gray-600 mb-6">
+        Nel Regno Unito, e in alcuni pub specializzati altrove in Europa, potresti anche incontrare la birra
+        in fusto tradizionale — nota anche come real ale. A differenza del keg, la birra viene inserita nel
+        fusto prima che la fermentazione sia completamente terminata e continua a maturare nel locale, servita
+        con pompa a mano o per gravità senza gas esterno. Il risultato è una birra viva, non filtrata, a
+        temperatura di cantina (11–13°C) con una carbonazione naturale morbida. Poiché è ancora viva, cambia
+        di giorno in giorno ed è meglio consumarla entro 3–5 giorni dall'apertura.
+      </p>
 
       <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
         <h3 class="font-semibold text-gray-900 text-lg mb-4">Segni di un fusto tradizionale ben conservato</h3>
@@ -139,16 +151,14 @@ translatedFrom: "2026-02-24"
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Aroma fresco e pulito — nessuna nota di aceto, piatto o muschio</span>
+            <span class="text-gray-600">Aroma fresco e pulito — nessuna nota di aceto, acida o di muffa</span>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5">
-        <p class="font-medium text-gray-700">Perché è importante quando si ordina</p>
+        <p class="font-medium text-gray-700">Chiedere informazioni sul fusto tradizionale</p>
         <p class="text-sm text-gray-700 mt-1">
-          Il fusto tradizionale è un prodotto vivo che cambia di giorno in giorno. Un fusto ben conservato al momento giusto
-          può essere eccezionale, ma un fusto vecchio o mal gestito avrà un sapore piatto o ossidato.
           Se stai ordinando da fusto tradizionale, è del tutto lecito chiedere quando è stato aperto —
           i buoni locali lo sapranno e non si dispiacerà dirtelo.
         </p>

@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Bary i restauracje
 contentVersion: "2026-02-24"
-translatedFrom: "2026-02-24"
+translatedFrom: "2026-03-15"
 ---
 
 {# Page header #}
@@ -34,7 +34,7 @@ translatedFrom: "2026-02-24"
     <p class="font-semibold text-gray-900 mb-3">Na tej stronie</p>
     <ul class="space-y-2">
       <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Pytania, które możesz zadać</a></li>
-      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Beczka vs keg: co właściwie zamawiasz</a></li>
+      <li><a href="#draught-beer" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Piwo z kranu: co właściwie zamawiasz</a></li>
       <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Na co zwracać uwagę</a></li>
     </ul>
   </nav>
@@ -90,37 +90,49 @@ translatedFrom: "2026-02-24"
       </div>
     </section>
 
-    <section id="cask-vs-keg">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Beczka vs keg: co właściwie zamawiasz</h2>
+    <section id="draught-beer">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Piwo z kranu: co właściwie zamawiasz</h2>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Piwo w kegu</h3>
       <p class="text-gray-600 mb-6">
-        „Piwo z kranu" obejmuje bardzo różne produkty. To, czy piwo jest refermentowane w beczce czy w kegu,
-        znacząco wpływa na jego smak, sposób serwowania i kryteria oceny.
+        Prawie całe piwo z kranu w Europie to piwo w kegu. Piwo fermentuje całkowicie przed rozlewem,
+        następnie jest szczelnie zamknięte w kegu — metalowym lub plastikowym — i podawane pod ciśnieniem
+        CO₂, azotu lub mieszaniny obu w barze. Efekt jest spójny i przewidywalny: ta sama karbonizacja
+        i smak od pierwszego do ostatniego kieliszka, zazwyczaj z trwałością od jednego do dwóch tygodni
+        po podłączeniu.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 mb-6">
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Beczka (real ale)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Niefiltrowane i niepasteryzowane — piwo żywe</li>
-            <li>Serwowane ręczną pompą lub grawitacyjnie, bez zewnętrznego gazu</li>
-            <li>Naturalnie nasycone CO₂ przez resztkowe drożdże w beczce</li>
-            <li>Serwowane w temperaturze piwnicy (11–13°C)</li>
-            <li>Łagodniejsze, mniej nasycone niż keg</li>
-            <li>Najlepiej spożyć w ciągu 3–5 dni od podłączenia</li>
-          </ul>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Keg</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Zazwyczaj filtrowane i/lub pasteryzowane</li>
-            <li>Serwowane pod ciśnieniem CO₂ lub azotu</li>
-            <li>Stałe nasycenie przez cały czas życia kegu</li>
-            <li>Serwowane zimne (4–8°C dla większości stylów)</li>
-            <li>Dłuższa trwałość po podłączeniu (1–2 tygodnie)</li>
-            <li>Obejmuje większość lagerów i wiele piw kraftowych</li>
-          </ul>
-        </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-10">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Oznaki dobrze utrzymanego kegu</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Podawane w odpowiedniej temperaturze dla danego stylu</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Czysty, świeży aromat — stęchłe lub kwaśne nuty często wskazują na brudne linie</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Odpowiednia karbonizacja — ani płaskie, ani nadmiernie musujące</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Trwała piana dla stylów, które powinny ją mieć</span>
+          </li>
+        </ul>
       </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Piwo beczkowe w stylu brytyjskim (real ale)</h3>
+      <p class="text-gray-600 mb-6">
+        W Wielkiej Brytanii, a także w niektórych specjalistycznych pubach piwnych w innych częściach Europy,
+        możesz spotkać piwo beczkowe — znane również jako real ale. W przeciwieństwie do kegu, piwo trafia
+        do beczki zanim fermentacja dobiegnie końca i dojrzewa dalej w lokalu, podawane ręczną pompą lub
+        grawitacyjnie bez zewnętrznego gazu. Efektem jest żywe, niefiltrowane piwo w temperaturze piwnicy
+        (11–13°C) z delikatną, naturalną karbonizacją. Ponieważ jest wciąż żywe, zmienia się z dnia na
+        dzień i najlepiej wypić je w ciągu 3–5 dni od podłączenia.
+      </p>
 
       <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
         <h3 class="font-semibold text-gray-900 text-lg mb-4">Oznaki dobrze utrzymanej beczki</h3>
@@ -139,18 +151,16 @@ translatedFrom: "2026-02-24"
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Świeży, czysty aromat — bez octu, bez płaskich lub stęchłych nut</span>
+            <span class="text-gray-600">Świeży, czysty aromat — bez octu, kwaśnych lub stęchłych nut</span>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5">
-        <p class="font-medium text-gray-700">Dlaczego to ma znaczenie przy zamawianiu</p>
+        <p class="font-medium text-gray-700">Pytać o piwo beczkowe</p>
         <p class="text-sm text-gray-700 mt-1">
-          Beczka to żywy produkt, który zmienia się z dnia na dzień. Dobrze utrzymana beczka w odpowiednim momencie
-          swojego życia może być wyjątkowa, ale stara lub źle prowadzona beczka będzie smakować płasko lub utleniająco.
-          Jeśli zamawiasz piwo beczkowe, jest jak najbardziej uzasadnione zapytać, kiedy beczka została podłączona —
-          dobre puby będą to wiedzieć i nie będą miały nic przeciwko powiedzeniu.
+          Jeśli zamawiasz piwo beczkowe, jest jak najbardziej uzasadnione zapytać, kiedy beczka została
+          podłączona — dobre puby będą to wiedzieć i nie będą miały nic przeciwko powiedzeniu.
         </p>
       </div>
     </section>

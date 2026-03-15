@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Bars & restaurants
-contentVersion: "2026-02-24"
+contentVersion: "2026-03-15"
 ---
 
 {# Page header #}
@@ -33,7 +33,7 @@ contentVersion: "2026-02-24"
     <p class="font-semibold text-gray-900 mb-3">On this page</p>
     <ul class="space-y-2">
       <li><a href="#questions" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Questions you can ask</a></li>
-      <li><a href="#cask-vs-keg" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Cask vs keg: what you're actually ordering</a></li>
+      <li><a href="#draught-beer" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">Draught beer: what you're actually ordering</a></li>
       <li><a href="#what-to-look-for" class="text-ebcu-blue hover:text-ebcu-blue-dark underline">What to look for</a></li>
     </ul>
   </nav>
@@ -89,37 +89,48 @@ contentVersion: "2026-02-24"
       </div>
     </section>
 
-    <section id="cask-vs-keg">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Cask vs keg: what you're actually ordering</h2>
+    <section id="draught-beer">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Draught beer: what you're actually ordering</h2>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Keg beer</h3>
       <p class="text-gray-600 mb-6">
-        "Draught beer" covers very different products. Whether a beer is cask-conditioned or keg-conditioned
-        significantly affects how it tastes, how it's served, and how it should be judged.
+        Almost all draught beer in Europe is keg beer. The beer is fully fermented before packaging,
+        then sealed in a keg — metal or plastic — and served under CO₂, nitrogen, or a mix of both
+        at the bar. The result is consistent and predictable: the same carbonation and flavour from
+        the first pour to the last, usually with a shelf life of one to two weeks once tapped.
       </p>
 
-      <div class="grid gap-6 md:grid-cols-2 mb-6">
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Cask (real ale)</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Unfiltered and unpasteurised — live beer</li>
-            <li>Served by hand pump or gravity, no external gas</li>
-            <li>Naturally carbonated by residual yeast in the cask</li>
-            <li>Served at cellar temperature (11–13°C)</li>
-            <li>Softer, lower carbonation than keg</li>
-            <li>Best consumed within 3–5 days of tapping</li>
-          </ul>
-        </div>
-        <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6">
-          <h3 class="font-semibold text-gray-900 text-lg mb-3">Keg</h3>
-          <ul class="text-gray-600 space-y-2">
-            <li>Typically filtered and/or pasteurised</li>
-            <li>Served under CO₂ or nitrogen pressure</li>
-            <li>Consistent carbonation throughout the keg's life</li>
-            <li>Served cold (4–8°C for most styles)</li>
-            <li>Longer shelf life once tapped (1–2 weeks)</li>
-            <li>Includes most lagers and many craft beers</li>
-          </ul>
-        </div>
+      <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-10">
+        <h3 class="font-semibold text-gray-900 text-lg mb-4">Signs of a well-kept keg</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Served at the right temperature for the style</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Clean, fresh aroma — musty or sour notes often point to dirty lines</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">Appropriate carbonation — neither flat nor over-fizzy</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
+            <span class="text-gray-600">A persistent head for styles that should have one</span>
+          </li>
+        </ul>
       </div>
+
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Cask beer (real ale)</h3>
+      <p class="text-gray-600 mb-6">
+        In the UK, and in some specialist beer pubs elsewhere in Europe, you may also encounter cask
+        beer — also known as real ale. Unlike keg, the beer goes into the cask before fermentation is
+        fully complete and continues to condition at the pub, served by hand pump or gravity with no
+        external gas. The result is a live, unfiltered beer at cellar temperature (11–13°C) with soft
+        natural carbonation. Because it is still alive it changes from day to day and is best drunk
+        within 3–5 days of tapping.
+      </p>
 
       <div class="rounded-xl border border-gray-200 bg-gray-50 shadow-sm p-6 mb-6">
         <h3 class="font-semibold text-gray-900 text-lg mb-4">Signs of a well-kept cask</h3>
@@ -138,16 +149,14 @@ contentVersion: "2026-02-24"
           </li>
           <li class="flex items-start gap-3">
             <div class="flex-shrink-0 w-5 h-5 rounded border-2 border-gray-300 mt-0.5"></div>
-            <span class="text-gray-600">Fresh, clean aroma — no vinegar, no flat or musty notes</span>
+            <span class="text-gray-600">Fresh, clean aroma — no vinegar, sour, or musty notes</span>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-ebcu-blue bg-ebcu-blue-light p-5">
-        <p class="font-medium text-gray-700">Why it matters when ordering</p>
+        <p class="font-medium text-gray-700">Asking about cask</p>
         <p class="text-sm text-gray-700 mt-1">
-          Cask is a live product that changes from day to day. A well-kept cask at the right point in
-          its life can be exceptional, but an old or poorly-managed cask will taste flat or oxidised.
           If you're ordering cask, it's perfectly reasonable to ask when the cask was tapped — good
           pubs will know and won't mind telling you.
         </p>
