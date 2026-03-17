@@ -7,5 +7,6 @@
   "contactEmail": "know-your-beer@ebcu.org",
   "languages": ["en", "de", "fr", "it", "es", "pl", "nl"],
   "defaultLanguage": "en",
-  "isDraft": true
+  "isDraft": true,
+  "gaId": "G-HSD7QJG51D"
 }

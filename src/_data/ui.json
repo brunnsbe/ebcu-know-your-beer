@@ -19,7 +19,11 @@
     "on_this_page": "On this page",
     "all_topics": "All topics",
     "breadcrumb_read": "Read the label",
-    "lang_soon": "soon"
+    "lang_soon": "soon",
+    "cookie_banner_text": "This site uses cookies for anonymous analytics to help us understand how visitors use the site. No personal data is shared with third parties.",
+    "cookie_accept": "Accept",
+    "cookie_reject": "Reject",
+    "cookie_settings": "Cookie settings"
   },
   "de": {
     "nav_home": "Startseite",
@@ -41,7 +45,11 @@
     "on_this_page": "Auf dieser Seite",
     "all_topics": "Alle Themen",
     "breadcrumb_read": "Etikett lesen",
-    "lang_soon": "demnächst"
+    "lang_soon": "demnächst",
+    "cookie_banner_text": "Diese Website verwendet Cookies für anonyme Analysen, um zu verstehen, wie Besucher die Seite nutzen. Es werden keine personenbezogenen Daten an Dritte weitergegeben.",
+    "cookie_accept": "Akzeptieren",
+    "cookie_reject": "Ablehnen",
+    "cookie_settings": "Cookie-Einstellungen"
   },
   "fr": {
     "nav_home": "Accueil",
@@ -63,7 +71,11 @@
     "on_this_page": "Sur cette page",
     "all_topics": "Tous les thèmes",
     "breadcrumb_read": "Lire l'étiquette",
-    "lang_soon": "bientôt"
+    "lang_soon": "bientôt",
+    "cookie_banner_text": "Ce site utilise des cookies d'analyse anonyme pour nous aider à comprendre comment les visiteurs utilisent le site. Aucune donnée personnelle n'est partagée avec des tiers.",
+    "cookie_accept": "Accepter",
+    "cookie_reject": "Refuser",
+    "cookie_settings": "Paramètres des cookies"
   },
   "it": {
     "nav_home": "Home",
@@ -85,7 +97,11 @@
     "on_this_page": "In questa pagina",
     "all_topics": "Tutti gli argomenti",
     "breadcrumb_read": "Leggi l'etichetta",
-    "lang_soon": "presto"
+    "lang_soon": "presto",
+    "cookie_banner_text": "Questo sito utilizza cookie per analisi anonime per aiutarci a capire come i visitatori utilizzano il sito. Nessun dato personale viene condiviso con terze parti.",
+    "cookie_accept": "Accetta",
+    "cookie_reject": "Rifiuta",
+    "cookie_settings": "Impostazioni cookie"
   },
   "es": {
     "nav_home": "Inicio",
@@ -107,7 +123,11 @@
     "on_this_page": "En esta página",
     "all_topics": "Todos los temas",
     "breadcrumb_read": "Leer la etiqueta",
-    "lang_soon": "próximamente"
+    "lang_soon": "próximamente",
+    "cookie_banner_text": "Este sitio utiliza cookies para análisis anónimos que nos ayudan a entender cómo los visitantes usan el sitio. No se comparten datos personales con terceros.",
+    "cookie_accept": "Aceptar",
+    "cookie_reject": "Rechazar",
+    "cookie_settings": "Configurar cookies"
   },
   "pl": {
     "nav_home": "Strona główna",
@@ -129,7 +149,11 @@
     "on_this_page": "Na tej stronie",
     "all_topics": "Wszystkie tematy",
     "breadcrumb_read": "Czytaj etykietę",
-    "lang_soon": "wkrótce"
+    "lang_soon": "wkrótce",
+    "cookie_banner_text": "Ta strona wykorzystuje pliki cookie do anonimowych analiz, aby pomóc nam zrozumieć, jak odwiedzający korzystają z witryny. Żadne dane osobowe nie są udostępniane stronom trzecim.",
+    "cookie_accept": "Akceptuj",
+    "cookie_reject": "Odrzuć",
+    "cookie_settings": "Ustawienia cookies"
   },
   "nl": {
     "nav_home": "Home",
@@ -151,6 +175,10 @@
     "on_this_page": "Op deze pagina",
     "all_topics": "Alle onderwerpen",
     "breadcrumb_read": "Lees het etiket",
-    "lang_soon": "binnenkort"
+    "lang_soon": "binnenkort",
+    "cookie_banner_text": "Deze site gebruikt cookies voor anonieme analyses om te begrijpen hoe bezoekers de site gebruiken. Er worden geen persoonsgegevens gedeeld met derden.",
+    "cookie_accept": "Accepteren",
+    "cookie_reject": "Weigeren",
+    "cookie_settings": "Cookie-instellingen"
   }
 }

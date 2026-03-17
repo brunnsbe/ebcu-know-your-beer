@@ -6,6 +6,18 @@
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Google Consent Mode v2 defaults -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
 </head>
 <body class="min-h-screen bg-white text-gray-700 flex flex-col">
 
@@ -159,7 +171,11 @@
     <div class="border-t border-gray-200">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
         <p>&copy; {% year %} {{ ui[uiLang].copyright }}</p>
-        <a href="https://www.ebcu.org" class="text-gray-500 hover:text-ebcu-blue">www.ebcu.org</a>
+        <div class="flex items-center gap-4">
+          <a href="#" class="cookie-settings-link text-gray-500 hover:text-ebcu-blue">{{ ui[uiLang].cookie_settings }}</a>
+          <span class="text-gray-300">|</span>
+          <a href="https://www.ebcu.org" class="text-gray-500 hover:text-ebcu-blue">www.ebcu.org</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -193,6 +209,83 @@
     mobileLanguageToggle.addEventListener('click', function() {
       mobileLanguageMenu.classList.toggle('hidden');
     });
+  </script>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-[60] px-4 pb-4 sm:pb-6" role="dialog" aria-label="{{ ui[uiLang].cookie_settings }}">
+    <div class="mx-auto max-w-3xl rounded-xl bg-white border border-gray-200 shadow-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <p class="flex-1 text-sm text-gray-700 leading-relaxed">
+        {{ ui[uiLang].cookie_banner_text }}
+      </p>
+      <div class="flex gap-3 shrink-0">
+        <button id="cookie-reject" class="px-5 py-2.5 text-sm font-semibold rounded-lg border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+          {{ ui[uiLang].cookie_reject }}
+        </button>
+        <button id="cookie-accept" class="px-5 py-2.5 text-sm font-semibold rounded-lg bg-ebcu-blue text-white hover:bg-ebcu-blue-dark transition-colors">
+          {{ ui[uiLang].cookie_accept }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Cookie Consent
+    (function() {
+      const GA_ID = '{{ site.gaId }}';
+      const COOKIE_NAME = 'kyb_consent';
+      const COOKIE_DAYS = 365;
+      const banner = document.getElementById('cookie-banner');
+
+      function getConsent() {
+        const match = document.cookie.match(new RegExp('(^| )' + COOKIE_NAME + '=([^;]+)'));
+        return match ? match[2] : null;
+      }
+
+      function setConsent(value) {
+        const d = new Date();
+        d.setTime(d.getTime() + COOKIE_DAYS * 86400000);
+        document.cookie = COOKIE_NAME + '=' + value + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+      }
+
+      function loadGA() {
+        if (document.getElementById('ga-script')) return;
+        const s = document.createElement('script');
+        s.id = 'ga-script';
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      }
+
+      // Check existing consent on page load
+      const consent = getConsent();
+      if (consent === 'accepted') {
+        loadGA();
+      } else if (consent !== 'rejected') {
+        banner.classList.remove('hidden');
+      }
+
+      document.getElementById('cookie-accept').addEventListener('click', function() {
+        setConsent('accepted');
+        loadGA();
+        banner.classList.add('hidden');
+      });
+
+      document.getElementById('cookie-reject').addEventListener('click', function() {
+        setConsent('rejected');
+        banner.classList.add('hidden');
+      });
+
+      // "Cookie settings" footer link re-opens the banner
+      document.querySelectorAll('.cookie-settings-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          banner.classList.remove('hidden');
+        });
+      });
+    })();
   </script>
 </body>
 </html>
