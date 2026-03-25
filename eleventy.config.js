@@ -11,6 +11,7 @@ export default function(eleventyConfig) {
   });
 
   // Pass through static assets
+  eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
