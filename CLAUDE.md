@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Know Your Beer is a static website for the EBCU (European Beer Consumers Union) consumer education campaign. It helps consumers understand beer labels, make informed choices, and know their rights when buying beer in both shops (off-trade) and bars/restaurants (on-trade).
 
-Built with Eleventy 3.x and Tailwind CSS 3.x.
+Live at [knowyour.beer](https://knowyour.beer). Built with Eleventy 3.x and Tailwind CSS 3.x.
 
 ## Commands
 
