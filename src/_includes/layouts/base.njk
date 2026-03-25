@@ -34,10 +34,12 @@
 
   <header class="sticky top-0 z-50 bg-ebcu-blue shadow-md">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex items-center justify-between">
-      <a href="{{ langPrefix }}/" class="flex items-center gap-3">
-        <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
-        <div class="font-bold text-2xl text-ebcu-gold">{{ site.name }}</div>
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="https://www.ebcu.org/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
+        </a>
+        <a href="{{ langPrefix }}/" class="font-bold text-2xl text-ebcu-gold hover:opacity-80 transition-opacity">{{ site.name }}</a>
+      </div>
       <nav class="hidden md:flex items-center gap-8 text-lg text-white">
         <a href="{{ langPrefix }}/" class="hover:opacity-80 transition-opacity{% if basePath == '/' %} font-medium{% endif %}">{{ ui[uiLang].nav_home }}</a>
         <a href="{{ langPrefix }}/read-the-label/" class="hover:opacity-80 transition-opacity{% if basePath == '/read-the-label/' or '/topics/' in basePath %} font-medium{% endif %}">{{ ui[uiLang].nav_read }}</a>
@@ -125,10 +127,12 @@
         <div class="grid gap-8 md:grid-cols-3">
           {# Logo and description #}
           <div>
-            <a href="{{ langPrefix }}/" class="flex items-center gap-3">
-              <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
-              <div class="font-bold text-xl text-gray-900">{{ site.name }}</div>
-            </a>
+            <div class="flex items-center gap-3">
+              <a href="https://www.ebcu.org/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
+              </a>
+              <a href="{{ langPrefix }}/" class="font-bold text-xl text-gray-900 hover:opacity-80 transition-opacity">{{ site.name }}</a>
+            </div>
             <p class="mt-4 text-sm text-gray-600">
               {{ ui[uiLang].footer_desc }}
             </p>
