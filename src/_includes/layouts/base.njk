@@ -1,11 +1,40 @@
+{# Compute language helpers #}
+{% set uiLang = page.lang or 'en' %}
+{% set langPrefix = '' %}
+{% if page.lang and page.lang != 'en' %}
+  {% set langPrefix = '/' + page.lang %}
+  {% set basePath = page.url | replace('/' + page.lang + '/', '/') %}
+{% else %}
+  {% set basePath = page.url %}
+{% endif %}
 <!doctype html>
-<html lang="{{ page.lang or 'en' }}">
+<html lang="{{ uiLang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ site.name }}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ basePath }}">
+  {% for lang in site.languages %}
+    {% if lang == 'en' %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ basePath }}">
+    {% else %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ basePath }}">
+    {% endif %}
+  {% endfor %}
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+  <meta property="og:locale" content="{{ site.locales[uiLang] }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
   <link rel="stylesheet" href="/assets/css/styles.css">
 
   <!-- Google Consent Mode v2 defaults -->
@@ -21,16 +50,6 @@
   </script>
 </head>
 <body class="min-h-screen bg-white text-gray-700 flex flex-col">
-
-{# Compute language helpers #}
-{% set uiLang = page.lang or 'en' %}
-{% set langPrefix = '' %}
-{% if page.lang and page.lang != 'en' %}
-  {% set langPrefix = '/' + page.lang %}
-  {% set basePath = page.url | replace('/' + page.lang + '/', '/') %}
-{% else %}
-  {% set basePath = page.url %}
-{% endif %}
 
   <header class="sticky top-0 z-50 bg-ebcu-blue shadow-md">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex items-center justify-between">

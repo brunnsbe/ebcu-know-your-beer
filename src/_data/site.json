@@ -1,4 +1,5 @@
 {
+  "url": "https://knowyour.beer",
   "name": "Know Your Beer",
   "org": "EBCU",
   "tagline": "Learn how to read a beer label and make informed choices.",
@@ -8,5 +9,15 @@
   "languages": ["en", "de", "fr", "it", "es", "pl", "nl"],
   "defaultLanguage": "en",
   "isDraft": true,
+  "ogImage": "/assets/images/sven-brandsma-PnA6lW19eMg-unsplash.jpg",
+  "locales": {
+    "en": "en_GB",
+    "de": "de_DE",
+    "fr": "fr_FR",
+    "it": "it_IT",
+    "es": "es_ES",
+    "pl": "pl_PL",
+    "nl": "nl_NL"
+  },
   "gaId": "G-HSD7QJG51D"
 }
