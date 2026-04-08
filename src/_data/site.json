@@ -8,7 +8,7 @@
   "contactEmail": "know-your-beer@ebcu.org",
   "languages": ["en", "de", "fr", "it", "es", "pl", "nl"],
   "defaultLanguage": "en",
-  "isDraft": true,
+  "isDraft": false,
   "ogImage": "/assets/images/sven-brandsma-PnA6lW19eMg-unsplash.jpg",
   "locales": {
     "en": "en_GB",
