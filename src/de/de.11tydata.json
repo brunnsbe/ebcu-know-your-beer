@@ -3,7 +3,7 @@
   "topics": [
     {
       "slug": "alcohol-style",
-      "title": "Alkoholgehalt, Portionsgröße & Bierstil",
+      "title": "Alkoholgehalt & Bierstil",
       "shortTitle": "Alkohol & Stil",
       "lead": "ABV, Standarddrinks und was Bierstile über Geschmackserwartungen aussagen.",
       "icon": "percent"
@@ -38,9 +38,9 @@
     },
     {
       "slug": "storage-serving",
-      "title": "Lagerung, Sediment & Naturtrub-Bierpflege",
+      "title": "Lagerung, Sediment & Bierpflege",
       "shortTitle": "Lagerung & Ausschank",
-      "lead": "Optimale Lagerbedingungen, Sediment verstehen und flaschenvergorene sowie Fassbiere servieren.",
+      "lead": "Optimale Lagerbedingungen, Ablagerungen (Sediment) verstehen und flaschenvergorene sowie Fassbiere servieren.",
       "icon": "storage"
     }
   ],
