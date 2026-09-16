@@ -146,14 +146,11 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-12">
         <div class="grid gap-8 md:grid-cols-3">
           {# Logo and description #}
-          <div>
-            <div class="flex items-center gap-3">
-              <a href="https://www.ebcu.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/images/cropped-web-new.png" alt="EBCU Logo" class="h-10 w-auto">
-              </a>
-              <a href="{{ langPrefix }}/" class="font-bold text-xl text-gray-900 hover:opacity-80 transition-opacity">{{ site.name }}</a>
-            </div>
-            <p class="mt-4 text-sm text-gray-600">
+          <div class="flex flex-col items-center text-center">
+            <a href="{{ langPrefix }}/" class="inline-block hover:opacity-80 transition-opacity">
+              <img src="/assets/images/know-your-beer-logo-mono.png" alt="{{ site.name }}" class="h-48 w-auto">
+            </a>
+            <p class="mt-2 text-sm text-gray-600">
               {{ ui[uiLang].footer_desc }}
             </p>
           </div>
