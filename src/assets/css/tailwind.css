@@ -69,4 +69,26 @@
   article .rounded-lg.border-gray-200 {
     @apply bg-gray-50 shadow-sm;
   }
+
+  /* Slow Ken Burns pan/zoom for the hero background image */
+  .kb-pan-bg {
+    animation: kb-pan 16s ease-in-out infinite alternate;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .kb-pan-bg {
+      animation: none;
+    }
+  }
+
+  @keyframes kb-pan {
+    0% {
+      transform: scale(1.18) translate(-2%, -2%);
+    }
+    100% {
+      transform: scale(1.08) translate(0, 0);
+    }
+  }
 }
