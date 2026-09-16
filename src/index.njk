@@ -7,7 +7,9 @@ contentVersion: "2026-02-24"
 
 {# Hero Section with dark overlay #}
 <section class="relative min-h-[720px] flex items-center bg-gray-900 pt-20 overflow-hidden">
-  <div class="absolute inset-0 kb-pan-bg" style="background-image: url('/assets/images/frontpage-background.jpg'); background-position: center 78%; background-size: cover;"></div>
+  <div class="absolute inset-0 overflow-hidden">
+    <img src="/assets/images/frontpage-background.jpg" alt="" class="kb-pan-bg w-full h-full object-cover" style="object-position: center 78%;">
+  </div>
   <div class="absolute inset-0 bg-black/30"></div>
   <div class="relative mx-auto max-w-7xl w-full px-4 sm:px-6 py-36 text-white">
     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-3xl">
